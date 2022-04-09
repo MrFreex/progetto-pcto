@@ -10,6 +10,16 @@ const Section = styled.section<SectionProps>`
   padding: 3em;
 `
 
+const Section2 = styled.section`
+  background-color: blue;
+  padding: 3em;
+`
+
+const H1Red = styled.h1`
+  font-size: 5em;
+  color: red;
+`
+
 const Title = styled.h1`
   font-family: 'Courier New', Courier, monospace;
   font-size: 50px;
@@ -37,13 +47,17 @@ const Button = styled.button`
 
 function App() {
   const [text, setText] = useState("");
+  
 
   return (
     <Section background="cornflowerblue">
       <Title> This is a title ✨</Title>
       <Content>{text}</Content>
       <Input type={"text"} onChange={(e) => setText(e.target.value)}></Input>
-      <Button onClick={() => alert("Lorem ipsum")}>Ok</Button>
+      <Button onClick={() => alert("CIAO BELLOOOOOO")}>Ok</Button>
+      <Section2>
+        <H1Red>CIAO</H1Red>
+      </Section2>
     </Section>
   );
 }
