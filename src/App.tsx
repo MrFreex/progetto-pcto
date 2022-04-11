@@ -2,6 +2,7 @@ import { useState, useEffect} from 'react';
 import styled from 'styled-components'
 import style from './css/Style.module.css'
 import Button from './components/Button'
+import { Router } from './library/ConditionalRouter';
 import './global.css';
 // import axios from 'axios'
 
@@ -10,12 +11,6 @@ import './global.css';
 const Container = styled.div`
   background-color: #000;
   padding: 3em;
-`
-
-const Body = styled.body`
-  background: rgb(29, 29, 29);
-  padding: 0;
-  margin: 0;
 `
 
 
@@ -27,16 +22,16 @@ const Titolo = styled.h1`
 const Header = styled.div`
   backdrop-filter: saturate(180%) blur(20px);
   background:rgba(94, 94, 94, 0.5);
-  padding:10px 0px;
-  font-size:52px;
+  padding:1vh 0px;
   line-height:auto;
-  color:#012D54;
-  text-shadow: 2px 2px white;
+  color:#ffffff;
+  color: #333;
+  display: grid;
+  grid-template-columns: 10% 70% 20% 10%; 
   border-bottom:1px solid rgba(255, 255, 255, 0.5);
   position: relative;
-  margin-bottom:2vh;
-  width: 100vw;
-  height: 5vh;
+  width: 100%;
+  height: 100%;
 `
 
 function App() {
@@ -47,17 +42,15 @@ function App() {
   }); 
   
   return (<>
-    <Titolo>Testo</Titolo>
-    <Header className={style.Header}>
-      <Button>Test</Button>
-    </Header>
-
-    <Titolo>rgegerg</Titolo>
-
+    <div className={style.fakeWhite}>
+      <Header className={style.Header}>
+        <h1>IStory.net</h1>
+        <h2>Awesome</h2> 
+      </Header>
+    </div>
+    
     <div className={ style.flexTest }>
-      <Button>A</Button>
-      <Button>A</Button>
-      <Button>A</Button>
+      
     </div>
   </>);
 }

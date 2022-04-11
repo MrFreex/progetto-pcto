@@ -1,5 +1,32 @@
+/* Import Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&family=Montserrat:wght@200;300;400;600&family=Poppins:wght@200;400;600&display=swap');
+
+/* Wow, now that's a row */
+
 .Header {
-    
+    overflow: hidden;
+}
+
+h1,h2,h3 {
+    font-family: MontSerrat;
+}
+
+.fakeWhite {
+    background-color: #fff;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: fit-content;
+}
+
+.Header > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .flexTest {
