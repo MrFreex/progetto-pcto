@@ -21,7 +21,7 @@ const Titolo = styled.h1`
 
 const Header = styled.div`
   backdrop-filter: saturate(180%) blur(20px);
-  background:rgba(94, 94, 94, 0.5);
+  background:rgba(94, 94, 94, 0.51);
   padding:1vh 0px;
   line-height:auto;
   color:#ffffff;
