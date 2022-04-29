@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 const InnerSvg = styled.div`
@@ -5,15 +6,24 @@ const InnerSvg = styled.div`
 `
 
 interface SvgProps {
-    children: any,
+    icon : string,
     style : any
 }
 
 const Svg = (props : SvgProps) => {
-    let { style, children } = props;
+    let { style, icon } = props;
+    let [i, setI] = useState("");
+    
+    // Carica le icone in base alla richiesta
+    useEffect(() => {
+        (async () => {
+            setI((await import("../svg/" + icon)).default);
+        })();
+    })
+
     return (
         <InnerSvg style={style}>
-            {children}
+            <img src={i} />
         </InnerSvg>
     )
 }

@@ -1,0 +1,8 @@
+{
+    "buttons": [
+        {
+            "name": "Home",
+            "icon": "nav/home.svg"
+        }
+    ]
+}
