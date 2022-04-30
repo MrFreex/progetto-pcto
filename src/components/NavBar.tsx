@@ -13,11 +13,19 @@ interface INavButton {
 }
 
 const NavButton = (props : INavButton) => {
-    return <Svg style={{}} icon='btc.svg' />
+    return <Svg style={{fill:"white"}} icon={props.icon} />
 }
 
 const NavButtons = () => {
-    return <div><NavButton title='Dio porco' icon='a' /></div>
+    return <div>
+        <NavButton title='home' icon='nav/home.svg' />
+        <NavButton title='first-website' icon='nav/first-website.svg' />
+        <NavButton title='crypting' icon='nav/crypting.svg' />
+        <NavButton title='coding' icon='nav/coding.svg' />
+        <NavButton title='market' icon='nav/market.svg' />
+        <NavButton title='hardware' icon='nav/hardware.svg' />
+        <NavButton title='evolution' icon='nav/evolution.svg' />
+    </div>
 }
 
 const NavBar = (props: NavProps) => {
