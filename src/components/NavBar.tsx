@@ -13,7 +13,7 @@ interface INavButton {
 }
 
 const NavButton = (props : INavButton) => {
-    return <Svg style={{fill:"white"}} icon={props.icon} />
+    return <Svg style={{}} className={Style.navButton} icon={props.icon} />
 }
 
 const NavButtons = () => {
