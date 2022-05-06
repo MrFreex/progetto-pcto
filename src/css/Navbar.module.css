@@ -30,8 +30,27 @@
     display: block;
 }
 
-.navButton > img{
-    fill:"red";
+.navButton > svg {
+    fill: #C4C4C4;
+    width:70%;
+    transition: 0.15s;
+}
+
+.navButton > svg:hover {
+    fill: #D26C6C;
+    filter: drop-shadow(0px 0px 4px #FF6C6C);
+    cursor: pointer;
+}
+
+.navButton {
+    display: block;
+    position: relative;
+    margin: 0.5vh 0;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width:600px) {   /*  Per telefono*/

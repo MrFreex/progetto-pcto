@@ -11,7 +11,13 @@ import './global.css';
 
 function App() {
   return (<>
-    <NavBar />
+    {  <NavBar /> }
+    <h1 id="title">Prova</h1>
+    <p id="gray">ciao</p>
+      <p id="text">Il World Wide Web
+        è  uno dei principali servizi di Internet
+        che permette di navigare e usufruire di miliardi 
+        di contenuti</p>
   </>);
 }
 

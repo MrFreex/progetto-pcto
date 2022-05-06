@@ -14,14 +14,19 @@ interface SvgProps {
 const Svg = (props : SvgProps) => {
     let { style, icon } = props;
 
-    
+    let [Icon, setIcon] = useState(<></>)
 
     // To Do
     
+    useEffect(() => {
+        import("../svg/" + icon + ".tsx").then((v) => {
+            setIcon(v.default)
+        }).catch(() => {})
+    })
 
     return (
         <InnerSvg className={props.className} style={style}>
-            {{ /* ToDo */ }} 
+            { Icon }  
         </InnerSvg>
     )
 }

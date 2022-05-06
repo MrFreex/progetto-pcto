@@ -1,0 +1,5 @@
+const %s : any = () => {
+   return ( %s )
+}
+
+export default %s

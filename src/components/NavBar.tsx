@@ -17,14 +17,14 @@ const NavButton = (props : INavButton) => {
 }
 
 const NavButtons = () => {
-    return <div>
-        <NavButton title='home' icon='nav/home.svg' />
-        <NavButton title='first-website' icon='nav/first-website.svg' />
-        <NavButton title='crypting' icon='nav/crypting.svg' />
-        <NavButton title='coding' icon='nav/coding.svg' />
-        <NavButton title='market' icon='nav/market.svg' />
-        <NavButton title='hardware' icon='nav/hardware.svg' />
-        <NavButton title='evolution' icon='nav/evolution.svg' />
+    return <div className={Style.navButtons}>
+        <NavButton title='home' icon='HouseBlank' />
+        <NavButton title='first-website' icon='Ethernet' />
+        <NavButton title='crypting' icon='Crypting' />
+        <NavButton title='coding' icon='Coding' />
+        <NavButton title='market' icon='Market' />
+        <NavButton title='hardware' icon='Hardware' />
+        <NavButton title='evolution' icon='Evolution' />
     </div>
 }
 
