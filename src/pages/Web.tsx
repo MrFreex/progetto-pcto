@@ -36,7 +36,7 @@ const WebContent = () => {
             </RedLine>
             <div></div>
             <div></div>
-            <iframe className={Style.frame} src="https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html"></iframe>
+            <iframe className={Style.frame1} src="https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html"></iframe>
             <div></div>
 
             <div>
@@ -67,7 +67,8 @@ const WebContent = () => {
             </RedLine>
 
             <div></div>
-            <div>{/*TODO add some content*/}</div>
+            <div>
+                <iframe className={Style.frame2} src="https://ourworldindata.org/grapher/number-of-internet-users-by-country"></iframe></div>
             <div className={GStyle.text}>
                 Questa facilità nel reperire le informazioni è resa possibile
                 sia dai protocolli di rete, sia dalla presenza, diffusione,
