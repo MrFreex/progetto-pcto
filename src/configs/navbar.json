@@ -1,8 +1,38 @@
 {
     "buttons": [
         {
-            "name": "Home",
-            "icon": "nav/home.svg"
+            "name": "home",
+            "icon": "HouseBlank"
+        },
+
+        {
+            "name": "first-website",
+            "icon": "Ethernet"
+        },
+
+        {
+            "name": "crypting",
+            "icon": "Crypting"
+        },
+
+        {
+            "name": "Coding",
+            "icon": "Coding"
+        },
+
+        {
+            "name": "Market",
+            "icon": "Market"
+        },
+
+        {
+            "name": "Hardware",
+            "icon": "Hardware"
+        },
+
+        {
+            "name": "Evolution",
+            "icon": "Evolution"
         }
     ]
 }
