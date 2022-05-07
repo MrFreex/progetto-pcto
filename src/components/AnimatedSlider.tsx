@@ -30,7 +30,7 @@ const AnimatedSlider = () => {
 
     useEffect(() => {
         stateAnim = setAnimated;
-    });
+    }, []);
 
     return <AnimDiv className={animate ? Animated.Slider : Animated.SliderBack}></AnimDiv>;
 };

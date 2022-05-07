@@ -1,7 +1,4 @@
 import { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import style from './css/Style.module.css';
-import Button from './components/Button';
 import { Router } from './library/ConditionalRouter';
 import { NavBar } from './components/NavBar';
 import { AnimatedSlider } from './components/AnimatedSlider';
@@ -27,7 +24,7 @@ export default function App() {
                     <NavBar />
                     <AnimatedSlider />
                     <Router>
-                        <Home set={() => {}}></Home>
+                        <Home set={() => {}}><></></Home>
                         <div>Prova</div>
                     </Router>
                 </>
