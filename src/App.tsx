@@ -3,6 +3,7 @@ import { Router } from './library/ConditionalRouter';
 import { NavBar } from './components/NavBar';
 import { AnimatedSlider } from './components/AnimatedSlider';
 import Home from './pages/Home';
+import Web from './pages/Web';
 import './global.css';
 // import axios from 'axios'
 
@@ -25,6 +26,7 @@ export default function App() {
                     <AnimatedSlider />
                     <Router>
                         <Home set={() => {}}><></></Home>
+                        <Web set={() => {}}><></></Web>
                         <div>Prova</div>
                     </Router>
                 </>

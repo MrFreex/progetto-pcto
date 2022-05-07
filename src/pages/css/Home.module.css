@@ -31,6 +31,9 @@
 .list:hover {
     transform: rotate(90deg);
 }
+.list:hover ~ .args li{
+    display: block;
+}
 
 .pgCont {
     display: inline-block;
@@ -44,3 +47,4 @@
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+

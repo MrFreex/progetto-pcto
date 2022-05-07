@@ -1,0 +1,32 @@
+.frame{
+    border-radius: 30px;
+    width: 90%;
+    height: 550px;
+}
+
+.normalText{
+    display: inline-block;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.specialText{
+    display: inline-block;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.specialText::first-letter{
+    color: #D26C6C;
+    text-shadow: 0px 2px 2px #000000;
+}
