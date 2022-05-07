@@ -2,7 +2,7 @@ import Style from '../css/Navbar.module.css';
 import { Svg } from './Svg';
 import { Link } from '../library/ConditionalRouter';
 import Config from '../configs/navbar.json';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 interface NavProps {}
 
