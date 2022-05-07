@@ -20,22 +20,30 @@ const Router = (props: myProps) => {
         });
     });
 
-    return <div style={{ overflow: 'hidden' }}>{childrenWithExtraProp[index]}</div>;
+    return (
+        <div className={LinkStyle.router} style={{ overflow: 'auto' }}>
+            {childrenWithExtraProp[index]}
+        </div>
+    );
 };
 
 interface LinkI {
     to: Number;
     children: any;
     className: any;
+    onClick: Function;
 }
 
 const Link = (props: LinkI) => {
     return (
         <div
             className={`${LinkStyle.Link} ${props.className}`}
-            onClick={async () => {
-                await Animate();
-                setPage(props.to as SetStateAction<number>);
+            onClick={() => {
+                setTimeout(async () => {
+                    props.onClick();
+                    await Animate();
+                    setPage(props.to as SetStateAction<number>);
+                }, 0);
             }}
         >
             {props.children}

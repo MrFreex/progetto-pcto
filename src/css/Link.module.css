@@ -1,0 +1,10 @@
+.router {
+    position: relative;
+    max-height: 100vh;
+}
+
+.router {
+    position: absolute;
+    left: 3vw;
+    width: 97vw;
+}

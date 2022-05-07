@@ -2,6 +2,7 @@ import Style from '../css/Navbar.module.css';
 import { Svg } from './Svg';
 import { Link } from '../library/ConditionalRouter';
 import Config from '../configs/navbar.json';
+import { useEffect, useState } from 'react';
 
 interface NavProps {}
 
@@ -9,12 +10,18 @@ interface INavButton {
     title: string;
     icon: string;
     to: Number;
+    onClick: Function;
+    clicked: boolean;
 }
 
 const NavButton = (props: INavButton) => {
     return (
-        <Link className="" to={props.to}>
-            <Svg style={{}} className={Style.navButton} icon={props.icon} />
+        <Link onClick={props.onClick} className="" to={props.to}>
+            <Svg
+                style={{}}
+                className={Style.navButton + ' ' + (props.clicked ? Style.navClicked : '')}
+                icon={props.icon}
+            />
         </Link>
     );
 };
@@ -32,10 +39,22 @@ const NavButton = (props: INavButton) => {
 */
 
 const NavButtons = () => {
+    const [active, setActive] = useState(0);
+
     return (
         <div className={Style.navButtons}>
             {Config.buttons.map((value, index) => {
-                return <NavButton title={value.name} to={index} icon={value.icon} />;
+                return (
+                    <NavButton
+                        onClick={() => {
+                            setActive(index);
+                        }}
+                        clicked={active === index}
+                        title={value.name}
+                        to={index}
+                        icon={value.icon}
+                    />
+                );
             })}
         </div>
     );

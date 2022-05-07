@@ -4,13 +4,13 @@
     }
 
     100% {
-        height: 100vh;
+        height: 106vh;
     }
 }
 
 @keyframes back {
     0% {
-        height: 100vh;
+        height: 106vh;
     }
 
     100% {

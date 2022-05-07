@@ -16,107 +16,25 @@ h3 {
     font-family: Montserrat;
 }
 
-#title {
-    margin-top: 1%;
-    margin-left: 10%;
-    
-
-    font-style: italic;
-    font-weight: 300;
-    font-size: 70px;
-    color: #fff;
-}
-
-#title::first-letter {
-    color: #D26C6C;
-}
-
-#text {
-    width: 50%;
-    margin-left: 50%;
-
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 68px;
-
-    color: #ffffff;
-}
-
-/* START h1 */
-
-#gray{
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 44px;
-
-    color: #949494;
-}
-
-#gray:first-child {
-    
-    margin-top: 2%;
-    margin-left: 8%;
-}
-
-#title ~ #gray {
-    
-    margin-top: 1%;
-    margin-left: 8%;
-}
-
-#PgCont{
-    display: inline-block;
-    margin-top: 3%;
-    margin-left:1%;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 59px;
-    color: #FFF;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#list{
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 68px;
-    display: inline-block;
-    margin-left: 12%;
-    color: #D26C6C;
-}
-
-#list:hover{
-    transform: rotate(90deg);
-}
-
-
 /* END h1 */
 
-/* width 
+/* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  Track 
-  ::-webkit-scrollbar-track {
+}
+
+/*Track */
+::-webkit-scrollbar-track {
     background: #212529;
-  }
-   
-   Handle 
-  ::-webkit-scrollbar-thumb {
-    background: #6C757D;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6c757d;
     border-radius: 10px;
-  }
-  
-   Handle on hover 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #5A636B; 
-  }*/
-  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5a636b;
+}

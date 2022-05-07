@@ -1,0 +1,11 @@
+.RedLine {
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+
+.RedLine > div:nth-child(1) {
+    background-color: #d26c6c;
+    border-radius: 15px;
+    display: block;
+    margin: 7vh 1.2vh;
+}

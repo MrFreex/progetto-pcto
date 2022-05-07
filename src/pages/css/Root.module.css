@@ -1,0 +1,28 @@
+.gridLayout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: right;
+    color: #ffffff;
+    margin-right: 3%;
+}
+
+.gray {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-bottom: 0;
+
+    color: #949494;
+}

@@ -4,15 +4,13 @@ import Animated from '../css/Animated.module.css';
 
 const AnimDiv = styled.div`
     position: absolute;
-    bottom: -53vw;
+    bottom: -3vw;
     background: #212529;
-    border-top: #eb5d5d 0.5vh solid;
-    transform: rotate(-45deg);
-    left: -53vw;
-
+    border-top: #eb5d5d 0.3vh solid;
+    left: 3vw;
     z-index: 999999;
     height: 0vw;
-    width: 200vw;
+    width: 97vw;
 `;
 
 let stateAnim: any;
