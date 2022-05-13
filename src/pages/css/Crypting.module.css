@@ -1,0 +1,28 @@
+.title {
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    font-size: 1.7vw;
+    margin: 1vh;
+    color: #FF4747;
+}
+
+.what{
+    margin-top: 2%;
+    margin-left: 8%;
+    font-family: 'Manrope';
+    font-weight: 100;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.normalText{
+    margin-top: 2%;
+    display: inline-block;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: right;
+    color: #ffffff;
+}

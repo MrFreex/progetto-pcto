@@ -16,10 +16,10 @@ interface INavButton {
 
 const NavButton = (props: INavButton) => {
     return (
-        <Link onClick={props.onClick} className="" to={props.to}>
+        <Link onClick={props.onClick} className={Style.NavLink} to={props.to}>
             <Svg
                 style={{}}
-                className={Style.navButton + ' ' + (props.clicked ? Style.navClicked : '')}
+                className={Style.NavButton + ' ' + (props.clicked ? Style.navClicked : '')}
                 icon={props.icon}
             />
         </Link>

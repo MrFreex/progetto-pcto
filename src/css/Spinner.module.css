@@ -6,7 +6,18 @@
         transform: rotate(360deg);
     }
 }
-.loading-spinner {
+
+
+.SpinnerCont {
+    position: relative;
+    margin: 25% auto;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.Spinner {
+    display: inline-block;
     width: 50px;
     height: 50px;
     border: 10px solid #f3f3f3; /* Light grey */

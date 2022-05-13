@@ -1,13 +1,14 @@
 .frame1{
     border-radius: 20px;
     width: 90%;
-    height: 550px;
+    background-color: white;
+    border: var(--mainColor) 0.2vh solid;
+    min-height: 35vh;
 }
 
 .frame2{
     margin-left: 3%;
     width: 100%; 
-    height: 600px; 
     border: 0px none;
     border-radius: 20px;
 }

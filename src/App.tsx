@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Router } from './library/ConditionalRouter';
 import { NavBar } from './components/NavBar';
 import { AnimatedSlider } from './components/AnimatedSlider';
+import Crypting from './pages/Crypting';
 import Home from './pages/Home';
 import Web from './pages/Web';
 import './global.css';
@@ -27,7 +28,7 @@ export default function App() {
                     <Router>
                         <Home set={() => {}}><></></Home>
                         <Web set={() => {}}><></></Web>
-                        <div>Prova</div>
+                        <Crypting set={() => {}}><></></Crypting>
                     </Router>
                 </>
             )}

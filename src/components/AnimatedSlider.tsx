@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Animated from '../css/Animated.module.css';
+import LoadingSpinner from './LoaderSpinner';
 
 const AnimDiv = styled.div`
     position: absolute;
@@ -9,7 +10,7 @@ const AnimDiv = styled.div`
     border-top: #eb5d5d 0.3vh solid;
     left: 3vw;
     z-index: 999999;
-    height: 0vw;
+    height: 0;
     width: 97vw;
 `;
 
@@ -17,11 +18,11 @@ let stateAnim: any;
 
 const Animate = () => {
     stateAnim(true);
-    return new Promise((solve, r) => {
+    return new Promise(resolve => {
         setTimeout(() => {
-            solve(true);
+            resolve(true);
             stateAnim(false);
-        }, 3500 / 2);
+        }, 1750);
     });
 };
 
@@ -32,7 +33,9 @@ const AnimatedSlider = () => {
         stateAnim = setAnimated;
     }, []);
 
-    return <AnimDiv className={animate ? Animated.Slider : Animated.SliderBack}></AnimDiv>;
+    return <AnimDiv className={animate ? Animated.Slider : Animated.SliderBack}>
+        <LoadingSpinner back={!animate}></LoadingSpinner>
+    </AnimDiv>;
 };
 
 export { AnimatedSlider, Animate };

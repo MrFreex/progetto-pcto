@@ -17,11 +17,11 @@ const Svg = (props: SvgProps) => {
     // To Do
 
     useEffect(() => {
-        import('../svg/' + icon + '.tsx')
-            .then((v) => {
-                setIcon(v.default);
-            })
-            .catch(() => {});
+        const importAll = async () => {
+            setIcon((await import('../svg/' + icon + '.tsx')).default)
+        }
+
+        importAll().catch(console.error);
     });
 
     return (

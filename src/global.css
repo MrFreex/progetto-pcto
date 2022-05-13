@@ -11,6 +11,12 @@ body {
     overflow: hidden;
 }
 
+:root {
+    --mainColor: #FF4747;
+}
+
+
+
 h1,
 h2,
 h3 {

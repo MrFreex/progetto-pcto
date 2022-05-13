@@ -68,7 +68,7 @@ const WebContent = () => {
 
             <div></div>
             <div>
-                <iframe className={Style.frame2} src="https://ourworldindata.org/grapher/number-of-internet-users-by-country"></iframe></div>
+                <iframe className={Style.Frame2} src="https://ourworldindata.org/grapher/number-of-internet-users-by-country"></iframe></div>
             <div className={GStyle.text}>
                 Questa facilità nel reperire le informazioni è resa possibile
                 sia dai protocolli di rete, sia dalla presenza, diffusione,
