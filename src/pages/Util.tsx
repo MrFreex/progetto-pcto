@@ -61,7 +61,7 @@ const GetLanguage = () => {
 const Localize = (lstring : { string: any }) => {
     let def = "en-US"
 
-    if (bLanguage() == "it-IT") {
+    if (bLanguage() === "it-IT") {
         def = "it-IT"
     }
 

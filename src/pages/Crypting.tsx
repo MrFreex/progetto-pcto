@@ -23,22 +23,14 @@ const CryptingContent = () => {
             <div></div>
             <RedLineRight>
                 <p className={Style.normalText}>
-                E’ un metodo di codificare i messaggi,
-                informazioni, e dati,  da un formato
-                leggibile(plaintext) ad un formato
-                illeggibile da un umano(ciphertext) .
-                Si tratta del modo migliore per tenere i dati al
-                sicuro da spie, ladri o divulgazioni accidentali. 
+                <L string={ Locals.crypting.crypting_p_2}></L> 
                 </p>
             </RedLineRight>
             <div></div>
             <div></div>
             <RedLineLeft>
                 <p className={GStyle.text}>
-                Quando criptate i vostri dati è come se
-                metteste i vostri soldi in cassaforte. Per
-                aprirla e riavere il vostro denaro avrete
-                bisogno di una chiave. 
+                <L string={ Locals.crypting.crypting_p_3 }></L>
                 </p>
             </RedLineLeft>
         </>

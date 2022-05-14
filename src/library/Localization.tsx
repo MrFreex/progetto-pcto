@@ -116,14 +116,132 @@ const Locals = {
         },
         "crypting_p_2": {
             "en-US" : () => {
-                return <> A world wide network allowing the connection and communication between local networks and data banks, allowing users to access media as images, movies, hypertext and music; among the services offered by Internet the electronic mail (email) </>
+                return <> It is a method of encoding messages,
+                information, and data, from a format
+                readable (plaintext) to a format
+                unreadable by a human (ciphertext).
+                This is the best way to keep data at
+                safe from spies, thieves or accidental disclosures.</>
             },
 
             "it-IT" : () => {
-                return <> Rete di collegamenti informatici a livello planetario che permette la connessione e la comunicazione tra loro di reti locali di computer e banche dati, rendendone disponibili agli utenti le informazioni nella forma di immagini, filmati, ipertesti, musica; tra i principali servizi offerti da Internet, la posta elettronica. </>
+                return <> E’ un metodo di codificare i messaggi,
+                informazioni, e dati,  da un formato
+                leggibile(plaintext) ad un formato
+                illeggibile da un umano(ciphertext) .
+                Si tratta del modo migliore per tenere i dati al
+                sicuro da spie, ladri o divulgazioni accidentali.</>
             }
         },
+        "crypting_p_3": {
+            "en-US" : () => {
+                return <> When you encrypt your data it is as if
+                put your money in the safe. For 
+                open it and get your money back
+                need a key.</>
+            },
 
+            "it-IT" : () => {
+                return <> Quando criptate i vostri dati è come se
+                metteste i vostri soldi in cassaforte. Per
+                aprirla e riavere il vostro denaro avrete
+                bisogno di una chiave.</>
+            }
+        }
+    },
+
+    spinner: {
+        randomSentences: [
+            {
+                "en-US": () => {
+                    return <>Changing Multiverse</>
+                },
+
+                "it-IT": () => {
+                    return <>Cambiando Multiverso</>
+                }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Initiating Jump Drive</>
+                },
+
+                "it-IT": () => {
+                    return <>Avviando il motore a iperluce</>
+                }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Getting back to the future</>
+                },
+
+                "it-IT": () => {
+                    return <>Ritornando al futuro</>
+                }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Checking Flux capacitor</>
+                },
+
+                "it-IT": () => {
+                    return <>Controllando il flusso canalizzatore</>
+                }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Persuading Rick to open that portal</>
+                },
+
+                "it-IT": () => {
+                    return <>Convincendo Rick ad aprire il portale</>
+                }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Naming a bug as a feature</>
+                },
+
+                "it-IT": () => {
+                    return <>Fingendo che un bug sia una feature</>
+                }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Pushing to git</>
+                },
+
+                "it-IT": () => {
+                    return <>Facendo il push su git</>
+                }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Hating <span style={{ fontFamily: "Comic Sans MS, Comic Sans, cursive" }}>Comic Sans</span></>
+                },
+
+                "it-IT": () => {
+                    return <>Odiando <span style={{ fontFamily: "Comic Sans MS, Comic Sans, cursive" }}>Comic Sans</span></>
+                }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Deleting <span style={{ fontFamily: "initial" }}>default HTML font</span></>
+                },
+
+                "it-IT": () => {
+                    return <>Eliminando <span style={{ fontFamily: "initial" }}>il font default HTML</span></>
+                }
+            }
+        ]
     }
 
 }
