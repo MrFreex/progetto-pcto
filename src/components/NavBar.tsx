@@ -2,7 +2,9 @@ import Style from '../css/Navbar.module.css';
 import { Svg } from './Svg';
 import { Link } from '../library/ConditionalRouter';
 import Config from '../configs/navbar.json';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { ChooseLanguage, GetLanguage } from '../pages/Util'
+
 
 interface NavProps {}
 
@@ -46,6 +48,7 @@ const NavButtons = () => {
             {Config.buttons.map((value, index) => {
                 return (
                     <NavButton
+                        key={index}
                         onClick={() => {
                             setActive(index);
                         }}
@@ -60,12 +63,31 @@ const NavButtons = () => {
     );
 };
 
+const LangSelector = () => {
+
+    const [clicked,setClicked] = useState(GetLanguage());
+    const handleClick = (index : string) => {
+        setClicked(index)
+        ChooseLanguage(index)
+    }
+
+    useEffect(() => {
+        setClicked(GetLanguage())
+    }, [])
+
+    return <div className={Style.langSelector}>
+        <h2 className={ (clicked == "it-IT") ? Style.clicked : "" } onClick={() => handleClick("it-IT")}>IT</h2>
+        <h2 className={ (clicked == "en-US") ? Style.clicked : "" } onClick={() => handleClick("en-US")}>EN</h2>
+    </div>
+}
+
 const NavBar = (props: NavProps) => {
     return (
         <div className={Style.navbar}>
             <div className={Style.navContent}>
                 <h1 className={Style.title}>IS</h1>
                 <NavButtons />
+                <LangSelector />
             </div>
         </div>
     );

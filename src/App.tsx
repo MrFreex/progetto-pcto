@@ -2,9 +2,13 @@ import { useState, useEffect } from 'react';
 import { Router } from './library/ConditionalRouter';
 import { NavBar } from './components/NavBar';
 import { AnimatedSlider } from './components/AnimatedSlider';
-import Crypting from './pages/Crypting';
 import Home from './pages/Home';
 import Web from './pages/Web';
+import Crypting from './pages/Crypting';
+import Coding from './pages/Coding';
+import Market from './pages/Market';
+import Hardware from './pages/Hardware';
+import Evolution from './pages/Evolution';
 import './global.css';
 // import axios from 'axios'
 
@@ -16,7 +20,6 @@ export default function App() {
     useEffect(() => {
         setLoading(false);
     }, [loading]);
-
     return (
         <>
             {loading ? (
@@ -29,6 +32,10 @@ export default function App() {
                         <Home set={() => {}}><></></Home>
                         <Web set={() => {}}><></></Web>
                         <Crypting set={() => {}}><></></Crypting>
+                        <Coding set={() => {}}><></></Coding>
+                        <Market set={() => {}}><></></Market>
+                        <Hardware set={() => {}}><></></Hardware>
+                        <Evolution set={() => {}}><></></Evolution>
                     </Router>
                 </>
             )}

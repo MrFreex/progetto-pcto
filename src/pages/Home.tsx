@@ -1,6 +1,7 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Home.module.css';
-import { Lateral, RedLine } from './Util';
+import Locals from '../library/Localization';
+import { Lateral, RedLineRight, RedLineLeft, Localize as L } from './Util';
 
 interface RouterProps {
     set: Function;
@@ -21,20 +22,17 @@ const HomeContent = () => {
 
             <div>
                 <p className={Style.list}> &gt; </p>
-                <p className={Style.pgCont}>Page content</p>
+                <p className={Style.pgCont}><L string={Locals.home.home_content} /></p>
             </div>
 
             <div></div>
             <div></div>
 
-            <RedLine>
+            <RedLineLeft>
                 <p className={GStyle.text}>
-                    Rete di collegamenti informatici a livello planetario che permette la connessione e la comunicazione
-                    tra loro di reti locali di computer e banche dati, rendendone disponibili agli utenti le
-                    informazioni nella forma di immagini, filmati, ipertesti, musica; tra i principali servizi offerti
-                    da Internet, la posta elettronica.
+                    <L string={Locals.home.home_p_1} />
                 </p>
-            </RedLine>
+            </RedLineLeft>
         </>
     );
 };

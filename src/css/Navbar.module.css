@@ -10,8 +10,25 @@
 .navContent {
     position: relative;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.langSelector > h2 {
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+}
+
+.clicked {
+    color: #eb5d5d;
+}
+
+.langSelector > h2:hover {
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    color: #eb5d5d;
+    transition: 0.15s;
 }
 
 .title {

@@ -4,10 +4,18 @@
     font-weight: 300;
     font-size: 70px;
     color: #fff;
+    width: 1.2rem;
     display: inline-block;
+    transition: 0.15s;
     margin: 0;
 }
+
+.title0:hover {
+    width: 18.0rem;
+}
+
 .title0:hover::after {
+    
     content: 'nternet';
 }
 

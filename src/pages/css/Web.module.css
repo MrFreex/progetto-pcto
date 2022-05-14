@@ -7,10 +7,14 @@
 }
 
 .frame2{
-    margin-left: 3%;
-    width: 100%; 
-    border: 0px none;
-    border-radius: 20px;
+    margin-left: 10%;
+    border-style: none;
+    width: 80%;
+    min-height: 45vh;
+}
+
+.frame2 > * {
+    color: black !important;
 }
 
 .normalText{

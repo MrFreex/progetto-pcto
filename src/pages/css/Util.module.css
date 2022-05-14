@@ -1,9 +1,21 @@
-.RedLine {
+.RedLineLeft {
     display: grid;
     grid-template-columns: 30px auto;
 }
 
-.RedLine > div:nth-child(1) {
+.RedLineLeft > div:nth-child(1) {
+    background-color: #ff4747;
+    border-radius: 15px;
+    display: block;
+    margin: 5vh 1.1vh;
+}
+
+.RedLineRight {
+    display: grid;
+    grid-template-columns: auto 30px;
+}
+
+.RedLineRight > div:nth-child(2) {
     background-color: #ff4747;
     border-radius: 15px;
     display: block;
