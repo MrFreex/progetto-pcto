@@ -25,7 +25,7 @@ const Animate = () => {
         }, 1750);
     });
 };
-
+// QUANDO SI CAMBIA PAGINA TRAMITE LA NAVBAR SI RESTA SEMPRE IN BASSO, LA VISUALIZZAZIONE NON VIENE PORTATA IN ALTO 
 const AnimatedSlider = () => {
     const [animate, setAnimated] = useState(false);
 
