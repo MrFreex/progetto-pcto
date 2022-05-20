@@ -1,6 +1,8 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Util.module.css';
+import HStyle from './css/Home.module.css'
 import bLanguage from 'detect-browser-language'
+import styled from 'styled-components';
 import Cookies from 'universal-cookie';
 import { useEffect, useState } from 'react';
 
@@ -77,4 +79,27 @@ const Localize = (lstring : { string: any }) => {
     return <Comp />;
 }
 
-export { Lateral, RedLineLeft, RedLineRight, ChooseLanguage, Localize, GetLanguage };
+interface ITitle {
+    children: any
+}
+
+const TitleP = styled.p`
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 1%;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 59px;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`
+
+const Title = (props: ITitle) => {
+    return <div>
+        <p className={HStyle.list}> &gt; </p>
+        <TitleP><Localize string={props.children} /></TitleP>
+    </div>
+}
+
+export { Lateral, RedLineLeft, RedLineRight, ChooseLanguage, Localize, GetLanguage, Title };

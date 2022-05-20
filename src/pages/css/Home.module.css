@@ -15,7 +15,6 @@
 }
 
 .title0:hover::after {
-    
     content: 'nternet';
 }
 
@@ -32,13 +31,15 @@
     font-size: 50px;
     line-height: 68px;
     display: inline-block;
-    margin-left: 12%;
+    margin-left: 2vh;
     color: #ff4747;
+    transition: 0.15s;
 }
 
 .list:hover {
-    transform: rotate(90deg);
+    transform: translate(1vh)
 }
+
 .list:hover ~ .args li{
     display: block;
 }

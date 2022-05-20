@@ -147,8 +147,156 @@ const Locals = {
                 aprirla e riavere il vostro denaro avrete
                 bisogno di una chiave.</>
             }
+        },
+
+        "crypting_cryptomath": {
+            "en-US": () => {
+                return <>
+                    RSA encryption sample
+                </>
+            },
+
+            "it-IT": () => {
+                return <>
+                    Esempio di criptazione RSA
+                </>
+            }
         }
     },
+
+    coding : {
+        "coding_title": {
+            "en-US" : () => {
+                return <> Coding </>
+            },
+            "it-IT" : () => {
+                    return <> Programmazione</>
+                }
+            },
+        "coding_p_1": {
+            "en-US" : () => {
+                return <> Coding is a discipline based on computational
+                thinking, that is all those mental processes that aim at
+                "problem solving, systems design, understanding human
+                behavior through those typical concepts usually attributable
+                to the field of computer science problem solving </>
+            },
+
+            "it-IT" : () => {
+                return <> Il coding è una disciplina che ha come base
+                il pensiero computazionale, cioè tutti quei
+                processi mentali che mirano alla
+                «risoluzione di problemi, la progettazione di
+                sistemi, la comprensione del
+                comportamento umano attraverso quei
+                concetti tipici solitamente attribuibili al
+                campo della computer science risoluzione
+                di problemi </>
+            }
+        },
+        "coding_p_2": {
+            "en-US" : () => {
+                return <> Coding is used for a ton of different things.
+                Can be used to creates websites, video games, and apps.
+                It is essential for the artificial intelligence ( AI ),
+                and for the machine learning.
+                Coding is the way to create programs for computers
+                that have istruction sequences that computer can execute</>
+            },
+
+            "it-IT" : () => {
+                return <> Il coding è usato per fare una tonnellata di cose differenti tra di loro.
+                Può essere usato per creare siti web, videogiochi e applicazioni.
+                É essenziale anche per le intelligenze artificiali ( IA ) e per il machine learning.
+                Il coding è il modo per creare programmi per il computer che hanno delle sequenze di
+                istruzioni che il computer può eseguire.</>
+            }
+        },
+        "coding_p_3": {
+            "en-US" : () => {
+                return <> Who is the smartest programmer in the world? <br> </br>
+                Who is the number 1 ?</>
+            },
+
+            "it-IT" : () => {
+                return <> Chi è il programmatore più intelligente al mondo?<br></br>
+                Chi è invece il numero 1?</>
+            }
+        },
+        "coding_p_4": {
+            "en-US" : () => {
+                return <> Obviously wi can’t talk about coding, without
+                talking about the smartest programmer ever, and the best
+                programmer ever.
+                They are respectively Terry A. Davis and Gennady Korotkevich </>
+            },
+
+            "it-IT" : () => {
+                return <> Ovviamente non possiamo parlare di programmazione,
+                senza citare il programmatore più intelligente e quello
+                più bravo; infatti essi sono rispettivamente Terry A.
+                Davis e Gennady Korotkevich </>
+            }
+        },
+        "coding_p_5": {
+            "en-US" : () => {
+                return <> Coding womens</>
+            },
+
+            "it-IT" : () => {
+                return <> Le donne nella programmazione</>
+            }
+        },
+        "coding_p_6": {
+            "en-US" : () => {
+                return <> According to a global software developer survey
+                in 2021, the vast majority of developers are males,
+                accounting for 91.7 percent of all respondents. Female
+                developers amounted to only five percent of all respondents, 
+                demonstrating the male-dominating reality of software
+                development jobs.</>
+            },
+
+            "it-IT" : () => {
+                return <> Secondo il ‘global software developer survey’,
+                nel 2021, la grande maggioranza degli sviluppatori è di
+                sesso maschile, con una percentuale pari al 91.7%.
+                Le donne sviluppatrici ammontano al solo 5% di tutti gli
+                intervistati, tesi che va a dimostrare la reale dominanza
+                maschile nei lavori di sviluppo software.</>
+            }
+        },
+        "coding_p_7": {
+            "en-US" : () => {
+                return <> Top 10 Programming Languages to Learn in 2022</>
+            },
+
+            "it-IT" : () => {
+                return <> I migliori 10 linguaggi di programmazione per imparare nel 2022</>
+            }
+        },
+        "coding_p_8": {
+            "en-US" : () => {
+                return <> How many programming languages exists?</>
+            },
+
+            "it-IT" : () => {
+                return <> Quanti sono i linguaggi di programmazione?</>
+            }
+        },
+        "coding_p_9": {
+            "en-US" : () => {
+                return <> In general there are about 2500 programming
+                languages more or less known and widespread.</>
+            },
+
+            "it-IT" : () => {
+                return <> In generale esistono circa 2500 linguaggi
+                di programmazione più o meno noti e diffusi.</>
+            }
+        },
+    },
+    
 
     spinner: {
         randomSentences: [

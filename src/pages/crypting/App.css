@@ -1,0 +1,32 @@
+.CryptoC {
+  margin: auto;
+  width: 1000px;
+  height: 70vh;
+  color: white;
+}
+
+.CryptoC input:focus {
+  outline: none
+}
+
+.CryptoC a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.CryptoC a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Khand&family=Source+Code+Pro&display=swap');
+
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}

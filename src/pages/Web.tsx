@@ -43,19 +43,22 @@ const WebContent = () => {
                 <div></div>
             </div>
 
-            <RedLineLeft>
+            <RedLineRight>
                 <p className={GStyle.text}>
                 <L string={ Locals.web.web_p_4}></L>
                 </p>
-            </RedLineLeft>
+            </RedLineRight>
 
             <div></div>
             <div>
                 <iframe className={Style.frame2} src="https://ourworldindata.org/grapher/number-of-internet-users-by-country"></iframe>
             </div>
-            <div className={GStyle.text}>
-                <L string={ Locals.web.web_p_5}></L>
-            </div>
+            <RedLineLeft>
+                <div className={GStyle.text}>
+                    <L string={ Locals.web.web_p_5}></L>
+                </div>
+            </RedLineLeft>
+            
         </>
     );
 };

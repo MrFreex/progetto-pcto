@@ -1,7 +1,8 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Crypting.module.css';
 import Locals from '../library/Localization';
-import { Lateral, RedLineLeft, RedLineRight, Localize as L } from './Util';
+import CryptoCompo from './crypting/CryptoCompo'
+import { Lateral, RedLineLeft, RedLineRight, Localize as L, Title } from './Util';
 
 interface RouterProps {
     set: Function;
@@ -33,16 +34,19 @@ const CryptingContent = () => {
                 <L string={ Locals.crypting.crypting_p_3 }></L>
                 </p>
             </RedLineLeft>
+            
         </>
     );
 };
 
 const Crypting = (props: RouterProps) => {
-    return (
+    return ( <>
         <div className={GStyle.gridLayout}>
             <CryptingContent></CryptingContent>
-        </div>
-    );
+        </div> 
+        <Title>{Locals.crypting.crypting_cryptomath}</Title>
+        <CryptoCompo />
+    </> );
 };
 
 export default Crypting
