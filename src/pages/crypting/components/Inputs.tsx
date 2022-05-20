@@ -62,7 +62,7 @@ class Inputs extends React.Component < thisProps > {
     getInput = (placeHolder : string, upperLabel : string, index: Number) => {
         return <InputBlock>
             <Label>{ upperLabel }</Label>
-            <input onChange={(e) => { this.props.valueCh(index, e.target.value) }} style={style.input} type="text" placeholder={placeHolder}></input>
+            <Input onChange={(e) => { this.props.valueCh(index, e.target.value) }} type="text" placeholder={placeHolder}></Input>
         </InputBlock>
     }
 
