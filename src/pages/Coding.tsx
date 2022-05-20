@@ -46,11 +46,11 @@ const CodingContent = () => {
             </RedLineLeft>
 
             <div>
-                <img></img>
+                <img src="images/Korotkevich.jpg"></img>
             </div>
 
             <div>
-                <img></img>
+                <img src="images/Terry-Davis.jpg"></img>
             </div>
 
             <div></div>
@@ -61,7 +61,7 @@ const CodingContent = () => {
 
             <RedLineLeft>
                 <p className={GStyle.text}>
-                <L string={ Locals.coding.coding_p_6}></L>
+                    <L string={ Locals.coding.coding_p_6}></L>
                 </p>
             </RedLineLeft>
             

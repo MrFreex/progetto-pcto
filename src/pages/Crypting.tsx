@@ -1,7 +1,7 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Crypting.module.css';
 import Locals from '../library/Localization';
-import CryptoCompo from './crypting/CryptoCompo'
+import CryptoCompo from './crypting/CryptoCompo';
 import { Lateral, RedLineLeft, RedLineRight, Localize as L, Title } from './Util';
 
 interface RouterProps {
@@ -19,7 +19,7 @@ const CryptingContent = () => {
             </div>
             <div></div>
             <div>
-                <h1 className={Style.what}><L string={Locals.crypting.crypting_p_1} /></h1>
+                <Title>{Locals.crypting.crypting_p_1}</Title>
             </div>
             <div></div>
             <RedLineRight>

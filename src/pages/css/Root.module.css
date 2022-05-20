@@ -1,6 +1,10 @@
 .gridLayout {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: calc(50% - 1.5vw) calc(50% - 1.5vw);
+}
+
+.gridLayout > div:nth-child(even) {
+    margin-left: 3vw;
 }
 
 .text {
