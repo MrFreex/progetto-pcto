@@ -214,7 +214,7 @@ const Locals = {
         },
         "coding_p_3": {
             "en-US" : () => {
-                return <> Who is the smartest programmer in the world? <br> </br>
+                return <> Who is the smartest programmer in the world? <br></br>
                 Who is the number 1 ?</>
             },
 
