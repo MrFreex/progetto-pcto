@@ -6,7 +6,7 @@ import Inputs from './components/Inputs'
 import Crypt from './base'
 
 const style : any = {
-  app : {
+  app: {
     display: "grid",
     gridTemplateRows : "70vh",
     gridTemplateColumns : "50% 50%",

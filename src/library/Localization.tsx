@@ -228,14 +228,24 @@ const Locals = {
                 return <> Obviously wi can’t talk about coding, without
                 talking about the smartest programmer ever, and the best
                 programmer ever.
-                They are respectively Terry A. Davis and Gennady Korotkevich </>
+                They are respectively Terry A. Davis (the creator of TempleOS) and Gennady Korotkevich <br />
+                TempleOS (known as "J Operating System" from 2004 to 2005, "LoseThos" from 2006 to early 2012, and "SparrowOS" in late 2012)
+                 is an operating system similar to the Commodore 64, DESQview and other early DOS-based interfaces.
+                  It was conceived by Davis in the early 2000s and developed alone over the course of a decade. 
+                  This included the design of its original programming language, editor, compiler and kernel. It 
+                  was ultimately composed of over 100,000 lines of code.</>
             },
 
             "it-IT" : () => {
                 return <> Ovviamente non possiamo parlare di programmazione,
                 senza citare il programmatore più intelligente e quello
-                più bravo; infatti essi sono rispettivamente Terry A.
-                Davis e Gennady Korotkevich </>
+                più bravo. Infatti essi sono rispettivamente Terry A.
+                Davis (il creatore di TempleOS) e Gennady Korotkevich <br />
+                TempleOS (conosciuto come "J Operating System" dal 2004 al 2005, "LoseThos" dal 2006 all'inizio del 2012,
+                 e "SparrowOS" verso la fine del 2012) è un sistema operativo simile a quello del Commodore 64, DESQview 
+                 assieme ad altre interfacce basate su DOS. Fu concepito da Davis all'inizio degli anni 2000, che lo 
+                 sviluppò esclusivamente da solo in circa 10 anni. Ciò includeva la progettazione del: linguaggio di programmazione, editor, 
+                 compilatore ed il kernel. Il suo codice sorgente vantava oltre 100,000 righe.</>
             }
         },
         "coding_p_5": {
@@ -294,9 +304,276 @@ const Locals = {
                 return <> In generale esistono circa 2500 linguaggi
                 di programmazione più o meno noti e diffusi.</>
             }
-        },
+        }
     },
-    
+
+    market : {
+        "market_title": {
+            "en-US" : () => {
+                return <> Web Market </>
+            },
+            "it-IT" : () => {
+                    return <> Mercato Web</>
+                }
+            },
+        "market_p_1": {
+            "en-US" : () => {
+                return <>  Web marketing is one of the most used practices in recent years, 
+                also thanks to the support of social networks and the increasing volume of people using the internet,
+                 for work and in their free time. But what did we start from? What were the first forms of web marketing?
+                  How was it done before social media? Let's see the general evolution of online advertising processes and
+                   what path has been taken over time.</>
+            },
+
+            "it-IT" : () => {
+                return <> Il Web marketing è una delle pratiche più usate negli ultimi anni, 
+                anche grazie al supporto dei social network e il volume sempre più alto delle
+                 persone che utilizzano internet, per lavoro e nel tempo libero. Ma da cosa siamo partiti? 
+                 Quali sono state le prima forme di web marketing? Come si effettuava prima dei social? 
+                 Andiamo a vedere l'evoluzione generale dei processi di pubblicità online e che strada è 
+                 stata intrapresa nel tempo. </>
+            }
+        },
+        "market_p_2": {
+            "en-US" : () => {
+                return <> What was the web market like in the past?</>
+            },
+
+            "it-IT" : () => {
+                return <> Come era in passato il mercato web? </>
+            }
+        },
+        "market_p_3": {
+            "en-US" : () => {
+                return <> Let's take a tour in the 90s in a chronological way, when the first forms of digital marketing
+                they had a major impact on the world market. In 1993 we saw the first online banner, from there
+                 onwards a new window has opened in the world of digital marketing. Shortly after (one year to be exact)
+                  in 1994 the first online search platform was launched; now known as Search Engines or Search Engine,
+                   the first was "Yahoo!" achieving enormous success, due to both the obvious lack of competition, and the
+                    novelty of the time: a site capable of finding other sites of our interest in the immense internet was not
+                    never seen before, making it as useful as it is comfortable. <br />
+                And in fact, within a year, the record quota of 1 million interactions succeeded.
+                 In 1996 there were other now little known or forgotten search engines like Alexa,
+                  Hotbots and the like. In those days all of these search engines had algorithms in common
+                   very rudimentary, often showing irrelevant content in the search results either
+                    useless for our purpose. To see the birth of Google we have to wait for 1998, like
+                     you will well know starting from that year the numbers did nothing but go up during the period
+                      next there were other smaller search engines too, but we know the way
+                      that Google has undertaken and how far Google has come so far.</>
+            },
+
+            "it-IT" : () => {
+                return <> Facciamo un giro negli anni '90 in modo cronologico, quando le prime forme di digital marketing 
+                ebbero un impatto notevole sul mercato mondiale. Nel 1993 abbiamo assistito al primo banner online, da lì
+                 in poi si è aperta una nuova finestra nel mondo del digital marketing. Poco dopo (per l'esattezza un anno)
+                  nel 1994 fu lanciata la prima piattaforma di ricerca online; ora noti come Motori di Ricerca o Search Engine,
+                   il primo fu “Yahoo!” raggiungendo un successo enorme, dovuta sia alla ovvia mancanza di concorrenza, sia alla
+                    novità dell'epoca: un sito capace di trovare altri siti di nostro interesse nell'immenso di internet non si era 
+                    mai visto, risultando tanto utile quanto comodo. <br />
+                E infatti nel giro di un anno riuscì la quota record di 1 milione di interazioni.
+                 Nel 1996 ci sono stati altri motori di ricerca ora poco noti o dimenticati come Alexa,
+                  Hotbot e simili. A quei tempi tutti questi motori di ricerca avevano in comune algoritmi
+                   molto rudimentali, spesso mostrando tra i risultati di ricerca contenuti non pertinenti o
+                    inutili al nostro scopo. Per vedere la nascita di Google dobbiamo aspettare il 1998, come
+                     ben saprete a partire da quell'anno i numeri non hanno fatto altro che salire, nel periodo
+                      successivo ci sono stati anche altri motori di ricerca più piccoli, ma sappiamo la strada 
+                      che ha intrapreso e a che punto è arrivata Google finora.</>
+            }
+        },
+        "market_p_4": {
+            "en-US" : () => {
+                return <> This chart shows the number of fixed broadband subscriptions per 100 people. <br />
+                This refers to fixed subscriptions to high-speed access to the public Internet (a TCP/IP connection), at downstream speeds equal to, or greater than, 256 kbit/s. <br />
+                Means of connection include cable modem, DSL, fiber-to-the-home, other fixed (wired)-broadband subscriptions, 
+                satellite broadband and terrestrial fixed wireless broadband. Excluded are subscriptions via mobile-cellular networks.</>
+            },
+
+            "it-IT" : () => {
+                return <> Questo grafico mostra il numero di abbonamenti fissi a banda larga ogni 100 persone. <br />
+                Si tratta di abbonamenti fissi per l'accesso ad alta velocità alla rete Internet pubblica (una connessione TCP/IP), a velocità di downstream pari o superiori a 256 kbit/s. <br />
+                I mezzi di connessione includono modem via cavo, DSL, fibra a casa, altri abbonamenti a banda larga (cablati) fissi,
+                banda larga satellitare e banda larga fissa senza fili terrestre. Sono esclusi gli abbonamenti tramite reti mobili-cellulari.</>
+            }
+        }
+    },
+
+    hardware : {
+        "hardware_title": {
+            "en-US" : () => {
+                return <> Hardware </>
+            },
+            "it-IT" : () => {
+                    return <> Hardware </>
+                }
+            },
+        "hardware_p_1": {
+            "en-US" : () => {
+                return <> Computer - First Generation </>
+            },
+
+            "it-IT" : () => {
+                return <> Computer - Prima Generazione </>
+            }
+        },
+        "hardware_p_2": {
+            "en-US" : () => {
+                return <> The period of first generation was from 1946-1959. The computers of first generation used
+                vacuum tubes as the basic components for memory and circuitry for CPU (Central Processing
+                Unit). These tubes, like electric bulbs, produced a lot of heat and the installations used to fuse
+                frequently. Therefore, they were very expensive and only large organizations were able to
+                afford it. 
+                <br />
+                <br />
+                The main features of the first generation are:<br />
+                • Vacuum tube technology<br />
+                • Unreliable<br />
+                • Supported machine language only<br />
+                • Very costly<br />
+                • Generated a lot of heat<br />
+                • Slow input and output devices<br />
+                • Huge size<br />
+                • Need of AC<br />
+                • Non-portable<br />
+                • Consumed a lot of electricity<br />
+                <br />
+                
+                Some computers of this generation were: <br /> <br />
+
+                • ENIAC<br />
+                • EDVAC<br />
+                • UNIVAC<br />
+                • IBM-701<br />
+                • IBM-650<br />
+                <br />
+                </>
+            },
+
+            "it-IT" : () => {
+                return <> Il periodo della prima generazione va dal 1946 al 1959. I computer di prima generazione utilizzati
+                tubi a vuoto come componenti di base per memoria e circuiti per CPU (Central Processing
+                Unità). Questi tubi, come le lampadine elettriche, producevano molto calore e gli impianti si fondevano
+                frequentemente. Pertanto, erano molto costosi e solo le grandi organizzazioni potevano farlo
+                permetterselo. 
+                <br />
+                <br />
+                Le caratteristiche generali della prima generazione sono:<br />
+                • Tecnologia del tubo a vuoto <br />
+                • Inaffidabile <br />
+                • Supportato solo il linguaggio macchina<br />
+                • Molto costoso <br />
+                • Generato molto calore <br />
+                • Lentezza dei dspositivi di input e output <br />
+                • Dimensioni enormi <br />
+                • Necessità di CA ( Corrente Alternata ) <br />
+                • Non portatile <br />
+                • Eccessivo consumo di elettricità <br /><br />
+                
+                Alcuni dei computer di questa generazione erano: <br /> <br />
+
+                • ENIAC<br />
+                • EDVAC<br />
+                • UNIVAC<br />
+                • IBM-701<br />
+                • IBM-650<br />
+                <br /></>
+            }
+        },
+        "hardware_p_3": {
+            "en-US" : () => {
+                return <> Computer - Types</>
+            },
+
+            "it-IT" : () => {
+                return <> Computer - Tipi</>
+            }
+        },
+        "hardware_p_4": {
+            "en-US" : () => {
+                return <> 
+                1. PC (Personal Computer)  <br /> &nbsp; It is a single user computer system having moderately powerful microprocessor <br />
+                2. Workstation  <br /> &nbsp; It is also a single user computer system, similar to personal computer however has a more powerful microprocessors. <br />
+                3. Mini computer <br /> &nbsp; It is a multi-user computer system, capable of supporting hundreds of users simultaneously. <br />
+                4. Main frame <br /> &nbsp; It is a multi-user computer system, capable of supporting hundreds of users simultaneously. Software technology is different from minicomputer. <br /> 
+                5. Supercomputer <br /> &nbsp; It is an extremely fast computer, which can execute hundreds of millions of instructions per second.<br />
+                <br /></>
+            },
+
+            "it-IT" : () => {
+                return <> 
+                1. PC (Personal Computer)  <br /> É un computer con un sistema a utente singolo avente una microprocessore a potenza moderata <br />
+                2. Workstation  <br /> É anch'esso un computer con un sistema a utente singolo, simile al personal computer, però ha un microprocessore a potenziale elevato. <br />
+                3. Mini computer <br /> É un computer con un sistema a multi-utenza, capace di supportare centinaia di utenti simultaneamente. <br />
+                4. Main frame <br /> É un computer con un sistema a multi-utenza, capace di supportare centinaia di utenti cimultaneamente.La tecnologia del software è differente da quella dei minicomputer. <br /> 
+                5. Supercomputer <br /> É un computer estremamente veloce, che riesce ad eseguire centinaia di milioni di istruzioni al secondo.<br />
+                <br /> </>
+            }
+        },
+        "hardware_p_5": {
+            "en-US" : () => {
+                return <> Computer - Components<br /><br /></>
+            },
+
+            "it-IT" : () => {
+                return <> Computer - Componenti <br /><br /></>
+            }
+        },
+        "hardware_p_6": {
+            "en-US" : () => {
+                return <> All types of computers follow the same basic logical structure and perform the following five basic operations for converting raw input data into information useful to their users.
+                <br /><br />
+                1. Take Input <br /> &nbsp; The process of entering data and instructions into the computer system. <br />
+                2. Store Data <br /> &nbsp; Saving data and instructions so that they are available for processing as and when required. <br />
+                3. Processing Data <br /> &nbsp; Performing arithmetic, and logical operations on data in order to convert them into useful information. <br />
+                4. Output Information <br /> &nbsp; The process of producing useful information or results for the user, such as a printed report or visual display. <br />
+                5. Control the workflow <br /> &nbsp; Directs the manner and sequence in which all of the above operations are performed.</>
+            },
+
+            "it-IT" : () => {
+                return <> Tutti i tipi di computer che seguono la stessa struttura logica basica ed esegue le seguenti cinque basiche operazioni per convertire un dato in input grezzo, in un informazione utile per i loro utenti.
+                <br /><br />
+                1. Riceve un input <br /> &nbsp; Il processo di ricezione dei dati e delle istruzioni all'interno del sistema del computer. <br />
+                2. Salva i dati <br /> &nbsp; Il salvataggio dei dati e delle istruzioni cosicchè siano disponibili per essere processate come e quando richieste. <br />
+                3. Li processa <br /> &nbsp; Aritmetica performante, e logica operativa dei dati in modo da convertirli in informazioni utili. <br />
+                4. Manda le informazioni in output <br /> &nbsp; Il processo di produzione di informazioni utili o risultati per l'utente come un report scritto o visivo. <br />
+                5. Controlla il flusso di lavoro <br /> &nbsp; Directs the manner and sequence in which all of the above operations are performed.</>
+            }
+        },
+        "hardware_p_7": {
+            "en-US" : () => {
+                return <> Computer - Hardware</>
+            },
+
+            "it-IT" : () => {
+                return <> Computer - Hardware</>
+            }
+        },
+        "hardware_p_8": {
+            "en-US" : () => {
+                return <> Hardware represents the physical and tangible components of a computer, i.e. the components that can be seen and touched. <br /> <br />
+
+                Examples of Hardware are the following: <br /> <br />
+                
+                • Input devices − keyboard, mouse, etc. <br />
+                • Output devices − printer, monitor, etc. <br />
+                • Secondary storage devices − Hard disk, CD, DVD, etc. <br />
+                • Internal components − CPU, motherboard, RAM, etc. <br /> </>
+            },
+
+            "it-IT" : () => {
+                return <> </>
+            }
+        },
+        "hardware_p_9": {
+            "en-US" : () => {
+                return <> </>
+            },
+
+            "it-IT" : () => {
+                return <> </>
+            }
+        }
+    },
+
 
     spinner: {
         randomSentences: [
@@ -394,4 +671,4 @@ const Locals = {
 
 }
 
-export default Locals
+export default Locals;

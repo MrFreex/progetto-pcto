@@ -8,8 +8,6 @@ import { useEffect, useState } from 'react';
 
 const cookies = new Cookies();
 
-
-
 interface ILateral {
     tag: string;
     children: any;
@@ -43,7 +41,7 @@ const RedLineRight = (props: { children: any }) => {
     );
 };
 
-let changeLang : React.Dispatch<React.SetStateAction<any>>[] = [];
+const changeLang : React.Dispatch<React.SetStateAction<any>>[] = [];
 
 const ChooseLanguage = (lang: string) => {
     cookies.set("lang", lang, { path: '/' })
@@ -52,26 +50,24 @@ const ChooseLanguage = (lang: string) => {
     }
 }
 
-let activeLang : string;
+let activeLang: string;
 
 const GetLanguage = () => {
     return activeLang;
 }
 
-
-
-const Localize = (lstring : { string: any }) => {
+const Localize = (lstring: { string: any }) => {
     let def = "en-US"
 
     if (bLanguage() === "it-IT") {
         def = "it-IT"
     }
 
-    let [lang,setLang] = useState(cookies.get("lang") || def)
+    const [lang, setLang] = useState(cookies.get("lang") ?? def)
 
     useEffect(() => {
         activeLang = lang;
-    })
+    });
 
     changeLang.push(setLang)
 

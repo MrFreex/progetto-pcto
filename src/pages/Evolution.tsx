@@ -7,6 +7,11 @@ interface RouterProps {
     children: any;
 }
 
+
+//https://opentextbc.ca/computerstudies/chapter/classification-of-generations-of-computers/
+//https://www.google.com/search?q=evolution+of+computer&rlz=1C1GCEU_itIT976IT976&oq=evolution+of+computer+&aqs=chrome..69i57j0i19l9.19608j0j7&sourceid=chrome&ie=UTF-8
+
+
 const EvolutionContent = () => {
     return (
         <>
