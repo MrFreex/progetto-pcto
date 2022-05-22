@@ -553,19 +553,241 @@ const Locals = {
 
                 Examples of Hardware are the following: <br /> <br />
                 
-                • Input devices − keyboard, mouse, etc. <br />
-                • Output devices − printer, monitor, etc. <br />
-                • Secondary storage devices − Hard disk, CD, DVD, etc. <br />
-                • Internal components − CPU, motherboard, RAM, etc. <br /> </>
+                • Input devices : keyboard, mouse, etc. <br />
+                • Output devices : printer, monitor, etc. <br />
+                • Secondary storage devices : Hard disk, CD, DVD, etc. <br />
+                • Internal components : CPU, motherboard, RAM, etc. <br /> </>
+            },
+
+            "it-IT" : () => {
+                return <> L'hardware rappresenta la componente fisica e tanghilibe di un computer, ovvero i componenti che possono essere visti e toccati. <br /> <br />
+
+                Degli esempi di hardware sono i seguenti: <br /> <br />
+                
+                • Dispositici di input : tastiera, mouse, etc. <br />
+                • Dispositivi di output : stampante, monitor, etc. <br />
+                • Dispositivi di memoria secondaria : Hard disk, CD, DVD, etc. <br />
+                • Componenti interni : CPU, schedamadre, RAM, etc. <br /> </>
+            }
+        },
+        "hardware_p_9": {
+            "en-US" : () => {
+                return <> The Hard-Drive <br /><br /></>
+            },
+
+            "it-IT" : () => {
+                return <> Il disco rigido <br /><br /></>
+            }
+        },
+        "hardware_p_10": {
+            "en-US" : () => {
+                return <> The hard drive is where the computer stores data for long-term use. Hard drives have a hard, disk-shaped platter
+                made of a magnetic material, and use magnets to store data on the platter. The magnetic material allows the computer to
+                easily erase and rewrite the data whenever it needs to.
+                <br />
+                Hard drives store data as files. The data might be codes for the characters of a text file, the color of a pixel in an
+                image file, or even a part of a song. The capacity of the hard drive is determined by how many bytes it can hold.
+                For example, a 40 gigabyte (abbreviated GB) hard drive can hold 40 billion bytes.</>
+            },
+
+            "it-IT" : () => {
+                return <> Il disco rigido è il luogo dove il computer salva tutti i dati per un uso a lungo termine. I dischi rigidi hanno un piatto a forma di disco rigido
+                fatto di materiali magnetici, e usa un magnete per salvar i dati sul piatto. I materiali magnetici consentono al computer di
+                cancellare e riscrivere facilmente i dati in caso di necessità.
+                <br />
+                Il disco rigido salva i dati sottoforma di file. I dati potrebbero essere codici per i caratteri di un file di testo, i colori di un pixel in una
+                immagine, oppure anche una parte di una canzone. La capacità di un disco rigido è determinata dalla quantità di byte che esso può contentere.
+                Per esempio, un disco rigido da 40 gigabyte (abbreviazione GB) puà contenere 40 billion di byte.</>
+            }
+        },
+        "hardware_p_11": {
+            "en-US" : () => {
+                return <> Problems with hard drives can occur if they get physically damaged, overheated or wear out. Hard drive problems
+                can also be caused by malware. You may get error messages about a hard drive failure or your computer simply gets stuck
+                trying to access a certain file. If your hard drive is damaged, there’s very little you can do to save it. You can use data
+                recovery tools to try and retrieve some of the data on it, but most of the time the hardware will need to be replaced.
+
+                Even if you protect your hard drive from physical damage and keep malware off your machine, your hard drive will eventually
+                wear out, so backup your data regularly just in case. It's also a good idea to defragment your hard drive regularly to keep
+                it running as fast as possible. </>
+            },
+
+            "it-IT" : () => {
+                return <> I problemi con i dischi rigidi possono presentarsi quandi essi incorrono in danni fisici, surriscanlamento o logorazione.
+                I problemi dei dichi rigidi possono essere causati anche da malfunzionamenti. È possibile che vengano visualizzati messaggi di errore
+                relativi a un guasto del disco rigido o che il computer si blocchi semplicemente cercando di accedere a un determinato file.
+                Se il tuo disco rigido è danneggiato, ci sono poche cose che puoi fare per provare a salvarlo. Puoi usare strumenti di recupero dati
+                per provare a recuperare alcuni dei dati in esso contenuti, ma la maggior parte delle volte l'hardware necessita di essere rimpiazzato.
+                <br />
+                Anche se proteggi il tuo disco rigido da danni fisici, e tieni malfunzionamenti lontani dalla tua macchina, il tuo disco rigido si logorerà,
+                quindi esegui il backup dei tuoi dati per prevenire certe situazioni. É una buona idea anche eseguire regolarmente la deframmentazione del
+                disco rigido regolarmente per farlo lavorare il più velocemente possibile. </>
+            }
+        },
+        "hardware_p_12": {
+            "en-US" : () => {
+                return <> The Motherboard</>
+            },
+
+            "it-IT" : () => {
+                return <> La schedamadre</>
+            }
+        },
+        "hardware_p_13": {
+            "en-US" : () => {
+                return <> The motherboard, also called the logic board or mainboard, is a board with electrical circuits printed on it that holds many of
+                the computer's essential components. The electrical circuits on the board allow the components to receive power and communicate with each
+                other.
+                <br />
+                A desktop computer motherboard usually contains the CPU and the main memory, and you can attach graphics and sound cards, memory,
+                and other peripherals to them with cards or cables. It's also very common for manufacturers to integrate some of these components
+                directly onto the motherboard itself.</>
+            },
+
+            "it-IT" : () => {
+                return <> La schedamadre, chiamata anche scheda logica o scheda principale, è una scheda con circuiti elettrici stampati su di
+                essa, e che contiene i componenti essenziali per il computer. I circuiti elettrici situati sulla scheda consentono ai componenti
+                di ricevere energia e comunicare tra di loro.
+                <br />
+                La scheda madre di un computer fisso contiene solitamente la CPU e la memoria principale, e ci puoi attaccare la scheda grafica e
+                la scheda audio, la memoria, e le altre periferiche collegate ad essa tramite carte e cavi. É anche molto comune per i manifatturieri
+                integrare alcuni componenti direttamente sulla schedamadre.</>
+            }
+        },
+        "hardware_p_14": {
+            "en-US" : () => {
+                return <> Integrated boards are usually less expensive and easier to manage since they come in a nice, tidy package.
+                But they don’t offer the best performance, you can’t upgrade the components, and if something breaks on an integrated board,
+                you have to replace the whole board.</>
+            },
+
+            "it-IT" : () => {
+                return <> Le schede integrate solitamente sono meno espensive e più facili da gestire dal momento che vengono ordinati in un bel
+                pacchetto. Perònon offrono le migliori performance, non puoi fare un miglioramento dei componenti, e se qualcosa si rompe
+                sull'integrato, devi rimpiazzare l'intera scheda.</>
+            }
+        },
+        "hardware_p_15": {
+            "en-US" : () => {
+                return <> The CPU</>
+            },
+
+            "it-IT" : () => {
+                return <> La CPU</>
+            }
+        },
+        "hardware_p_16": {
+            "en-US" : () => {
+                return <> The CPU, or Central Processing Unit, is the brain of the computer. CPUs do two major things: performing mathmatical
+                and logical operations (in other words, making the computer do stuff), and retrieving and carrying out instructions from the
+                computer's memory.
+
+                In personal computers, the CPU is a small, square chip with many little metallic pins sticking out of it called a microprocessor,
+                and is attached directly to the motherboard. Since they create a lot of heat, modern CPUs have a heat sink and small fan attached
+                to keep them cool.
+                
+                If something goes wrong with your CPU, it can be replaced but it's a good idea to let a professional.</>
+            },
+
+            "it-IT" : () => {
+                return <> Le CPU, o Unità di Processo Centrali, sono il cervello del computer. Le CPU fanno principalmente due cose:
+                eseguono operazioni matematiche e logiche (in altre parole, fanno fare cose al computer), e recuperano e svolgono le istruzioni
+                assegnate dalla memoria del computer.
+                <br />
+                Nei PC, la CPU è un piccolo chip quadrato, con molti piccoli pin metallici che sporgono fuori, chiamati microprocessori, e sono
+                direttamente collegati alla schedamadre. Dal momento che creano molto calore, le CPU moderne hanno un dissipatore di calore e una
+                piccola ventola attaccata per mantenerle fresche.
+                <br />
+                Se quacosa va storto con la tua CPU, può essere rimpiazzata, ma sarebbe meglio se lo facesse un professionista.</>
+            }
+        },
+        "hardware_p_17": {
+            "en-US" : () => {
+                return <> RAM</>
+            },
+
+            "it-IT" : () => {
+                return <> RAM</>
+            }
+        },
+        "hardware_p_18": {
+            "en-US" : () => {
+                return <> RAM, or Random Access Memory, is a type of computer memory used for short-term data storage. It is usually an integrated circuit board installed in the motherboard.
+
+                How much RAM your computer has can affect its performance. Some tasks like playing games or editing videos will use a lot more RAM than others. If it seems like your computer is taking forever to complete tasks, you may need to add more RAM. Fortunately, it's very easy to upgrade RAM. You simply install more boards or replace the ones already installed. But, before you buy any, be sure to figure out exactly how much you need and how much can fit in your computer, and get a trusted adult to help you.</>
             },
 
             "it-IT" : () => {
                 return <> </>
             }
         },
-        "hardware_p_9": {
+        "hardware_p_19": {
             "en-US" : () => {
+                return <> The Graphic Card</>
+            },
+
+            "it-IT" : () => {
+                return <> La scheda grafica</>
+            }
+        },
+        "hardware_p_20": {
+            "en-US" : () => {
+                return <> A graphics card, or video card, processes and outputs images to the computer's monitor. Less expensive graphics card are integrated directly into the motherboard, but more powerful cards come as a separate component that you can replace without having to change the entire motherboard.
+
+                The graphics card receives information from the CPU about what to display, decides how to use the pixels on the screen to display that image, and sends that information to the monitor. For 3-D images, the graphics card first creates everything out of straight lines, called a "wireframe," and then fills in all the lighting, texture and color. In a fast-paced game, it has to do this around sixty times per second.</>
+            },
+
+            "it-IT" : () => {
                 return <> </>
+            }
+        },
+        "hardware_p_21": {
+            "en-US" : () => {
+                return <> Many people think that graphics cards are just used for playing computer games, but they are also useful for graphic designers, video editors, and 3-D animators, who usually need the best display possible.
+
+                If your graphics card is not integrated into the motherboard, it's very simple to replace. Before you buy a new one though, make sure you know what you need and what your system can support. Some monitors can't display the highest resolution that an expensive graphics card can produce, and some graphics cards use the computer's memory rather than their own to produce their display.</>
+            },
+
+            "it-IT" : () => {
+                return <> </>
+            }
+        },
+        "hardware_p_22": {
+            "en-US" : () => {
+                return <> The Network Interface Card</>
+            },
+
+            "it-IT" : () => {
+                return <> La scheda di interfaccia di rete, o scheda di rete</>
+            }
+        },
+        "hardware_p_23": {
+            "en-US" : () => {
+                return <> A network interface card lets you connect your computer to a network. It can be a local one, like a LAN, or the Internet if the computer connects to a modem.
+
+                The most common network interface cards are ethernet cards that use a cable to connect the computer to a network hub like a router, but there are also wireless network cards that have an antennae instead of a cable port. Many newer computers have a network card built in to the motherboard.
+                
+                Each network card has a unique address that identifies the computer on the network, called a Media Access Control, or MAC, address. The address is usually assigned by the manufacturer and is part of the hardware.</>
+            },
+
+            "it-IT" : () => {
+                return <> </>
+            }
+        },
+        "hardware_p_24": {
+            "en-US" : () => {
+                return <> The Sound Card</>
+            },
+
+            "it-IT" : () => {
+                return <> La scheda audio</>
+            }
+        },
+        "hardware_p_25": {
+            "en-US" : () => {
+                return <> A sound card processes and plays sound files. It can work with both the internal and external speakers to provide sound. Of course, the better the sound card and speakers are, the better the sound quality.
+
+                In addition to speaker ports, a sound card will usually have a microphone port as well so you can record your own sounds.</>
             },
 
             "it-IT" : () => {

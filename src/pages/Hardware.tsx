@@ -4,6 +4,15 @@ import Locals from '../library/Localization';
 import { Lateral, RedLineLeft, RedLineRight, Localize as L } from './Util';
 import styled from 'styled-components';
 import Components from '../images/computerHardwareComponents.gif';
+import HardDrive from '../images/hardDrive.gif';
+import Motherboard  from '../images/motherboard.gif';
+import CPU from '../images/CPU.gif';
+import RAM from '../images/RAM.gif';
+import GraphicsCard from '../images/graphicsCard.gif';
+import NetworkCard from '../images/networkCard.gif';
+import SoundCard from '../images/soundCard.gif';
+
+
 
 interface RouterProps {
     set: Function;
@@ -70,6 +79,68 @@ const HardwareContent = () => {
             </RedLineLeft>
 
             <img src={Components} alt="" />
+
+            <ArgumentTitle><L string={Locals.hardware.hardware_p_9}></L></ArgumentTitle>
+
+            <img src={HardDrive} alt="" />
+
+            <RedLineLeft>
+                <Argument><L string={Locals.hardware.hardware_p_10}></L></Argument>
+            </RedLineLeft>
+
+            <Argument><L string={Locals.hardware.hardware_p_11}></L></Argument>
+
+            <ArgumentTitle><L string={Locals.hardware.hardware_p_12}></L></ArgumentTitle>
+            
+            <img src={Motherboard} alt="" />
+
+            <RedLineLeft>
+                <Argument><L string={Locals.hardware.hardware_p_13}></L></Argument>
+            </RedLineLeft>
+
+            <Argument><L string={Locals.hardware.hardware_p_14}></L></Argument>
+
+            <ArgumentTitle><L string={Locals.hardware.hardware_p_15}></L></ArgumentTitle>
+
+            <img src={CPU} alt="" />
+            
+            <RedLineLeft>
+                <Argument><L string={Locals.hardware.hardware_p_16}></L></Argument>
+            </RedLineLeft>
+
+            <ArgumentTitle><L string={Locals.hardware.hardware_p_17}></L></ArgumentTitle>
+
+            <img src={RAM} alt="" />
+
+            <RedLineLeft>
+                <Argument><L string={Locals.hardware.hardware_p_18}></L></Argument>
+            </RedLineLeft>
+
+            <ArgumentTitle><L string={Locals.hardware.hardware_p_19}></L></ArgumentTitle>
+
+            <img src={GraphicsCard} alt="" />
+
+            <RedLineLeft>
+                <Argument><L string={Locals.hardware.hardware_p_20}></L></Argument>
+            </RedLineLeft>
+
+            <Argument><L string={Locals.hardware.hardware_p_21}></L></Argument>
+
+            <ArgumentTitle><L string={Locals.hardware.hardware_p_22}></L></ArgumentTitle>
+
+            <img src={NetworkCard} alt="" />
+
+            <RedLineLeft>
+                <Argument><L string={Locals.hardware.hardware_p_23}></L></Argument>
+            </RedLineLeft>
+
+            <ArgumentTitle><L string={Locals.hardware.hardware_p_24}></L></ArgumentTitle>
+
+            <img src={SoundCard} alt="" />
+
+            <RedLineLeft>
+                <Argument><L string={Locals.hardware.hardware_p_25}></L></Argument>
+            </RedLineLeft>
         </>
     );
 };
