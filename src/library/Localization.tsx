@@ -205,7 +205,7 @@ const Locals = {
             },
 
             "it-IT" : () => {
-                return <> Il coding è usato per fare una tonnellata di cose differenti tra di loro.
+                return <> Il coding è usato per fare un'infinità di cose differenti tra di loro.
                 Può essere usato per creare siti web, videogiochi e applicazioni.
                 É essenziale anche per le intelligenze artificiali ( IA ) e per il machine learning.
                 Il coding è il modo per creare programmi per il computer che hanno delle sequenze di
@@ -807,7 +807,7 @@ const Locals = {
 
             "it-IT" : () => {
                 return <> Una scheda di rete fa in modo che il tuo computer si colleghi alla rete. Potrebbe essere locale, come una LAN (Local 
-                Access Network), oppure Internet se il computer è connesso a un modem.
+                Access Network ={">"} Rete di Accesso Locale), oppure Internet se il computer è connesso a un modem.
                 <br /><br />
                 Le schede di rete più comuni che usano un cavo per connettere un computer ad un hub come un ruoter, ma ci sono anche schede di
                 rete wireless (senza fili) che hanno un'antenna al posto di una porta cablata. Molti dei computer più nuovi hanno una scheda di

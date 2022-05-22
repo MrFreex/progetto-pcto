@@ -61,7 +61,7 @@ const CodingContent = () => {
                 <img className={Style.images} src={Female} alt=""></img>
             </div>
 
-            <div>
+            <div className={GStyle.textRed}>
             <p className={GStyle.text}>
                 <L string={Locals.coding.coding_p_5}></L>
             </p>
