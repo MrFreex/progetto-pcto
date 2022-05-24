@@ -42,7 +42,12 @@ const CryptingContent = () => {
             </RedLineRight>
 
             <div></div>
-            
+
+            <RedLineLeft>
+                <p className={GStyle.text}>
+                <L string={ Locals.crypting.crypting_p_5 }></L>
+                </p>
+            </RedLineLeft>
             
         </>
     );
