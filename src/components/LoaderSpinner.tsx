@@ -14,7 +14,7 @@ export default function LoadingSpinner(props : { back : boolean }) {
             let newRandom
             do {
                 newRandom = Math.floor(Math.random() * Locals.spinner.randomSentences.length)
-            } while (textIndex == newRandom)
+            } while (textIndex === newRandom)
 
             setTextIndex(newRandom)
         }

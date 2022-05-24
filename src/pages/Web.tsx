@@ -31,7 +31,7 @@ const WebContent = () => {
             </RedLineRight>
             <div></div>
             <div></div>
-            <iframe className={Style.frame1} src="https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html"></iframe>
+            <iframe className={Style.frame1} src="https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html" title={"iframe"}></iframe>
             <div></div>
 
             <div>
@@ -51,7 +51,7 @@ const WebContent = () => {
 
             <div></div>
             <div>
-                <iframe className={Style.frame2} src="https://ourworldindata.org/grapher/number-of-internet-users-by-country"></iframe>
+                <iframe className={Style.frame2} src="https://ourworldindata.org/grapher/number-of-internet-users-by-country" title={"web"}></iframe>
             </div>
             <RedLineLeft>
                 <div className={GStyle.text}>

@@ -1,4 +1,4 @@
-import { Children, useState, useRef, cloneElement, SetStateAction } from 'react';
+import { Children, useState, useRef, useEffect, cloneElement, SetStateAction } from 'react';
 import { Animate } from '../components/AnimatedSlider';
 
 import LinkStyle from '../css/Link.module.css';
@@ -13,6 +13,10 @@ const Router = (props: myProps) => {
     const [index, setActive] = useState(process.env.NODE_ENV === 'development' ? 0 : 0);
     const rRef = useRef()
     setPage = setActive;
+    
+    useEffect(() => {
+        (rRef.current as any).scrollTo(0, 0);
+    }, [index])
 
     const childrenWithExtraProp = Children.map(props.children, (child) => {
         return cloneElement(child, {
@@ -21,7 +25,7 @@ const Router = (props: myProps) => {
     });
 
     return (
-        <div ref={rRef} className={LinkStyle.router} style={{ overflow: 'auto' }}>
+        <div ref={rRef as any} className={LinkStyle.router} style={{ overflow: 'auto' }}>
             {childrenWithExtraProp[index]}
         </div>
     );

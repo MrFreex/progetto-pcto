@@ -20,7 +20,7 @@ const Locals = {
             "it-IT": () => {
                 return <> Contenuto </>
             }
-        }
+        },
     },
 
     web : {
@@ -975,7 +975,7 @@ const Locals = {
                 },
 
                 "it-IT": () => {
-                    return <>Odiando <span style={{ fontFamily: "Arial, Sans Serif" }}>Arial e i font senza grazie</span></>
+                    return <>Odiando <span style={{ fontFamily: "Arial, Sans Serif" }}>Arial e Sans Serif</span></>
                 }
             },
 

@@ -15,9 +15,9 @@ interface ILateral {
 
 const Lateral = (props: ILateral) => {
     return (
-        <div>
+        <div className={GStyle.graydiv}>
             <p className={GStyle.gray}> &lt;{props.tag}&gt; </p>
-            {props.children}
+            <div>{props.children}</div>
             <p className={GStyle.gray}> &lt;/{props.tag}&gt; </p>
         </div>
     );

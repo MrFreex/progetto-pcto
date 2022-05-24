@@ -1,7 +1,7 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Market.module.css';
 import Locals from '../library/Localization';
-import { Lateral, RedLineLeft, RedLineRight, Localize as L } from './Util';
+import { Lateral, RedLineLeft, Localize as L } from './Util';
 
 interface RouterProps {
     set: Function;
@@ -44,7 +44,7 @@ const MarketContent = () => {
                 </RedLineLeft>
             </div>     
 
-            <iframe className={Style.frame} src="https://ourworldindata.org/grapher/broadband-penetration-by-country?country=PAK~KOR~OWID_WRL~USA~ITA"></iframe>
+            <iframe className={Style.frame} src="https://ourworldindata.org/grapher/broadband-penetration-by-country?country=PAK~KOR~OWID_WRL~USA~ITA" title={"market"}></iframe>
 
             
             <div>

@@ -1,5 +1,7 @@
 import Style from '../css/Navbar.module.css';
+import MobileNavC from '../css/MobileNav.module.css';
 import { Svg } from './Svg';
+import BarsSolid from '../svg/BarsSolid';
 import { Link } from '../library/ConditionalRouter';
 import Config from '../configs/navbar.json';
 import { useEffect, useState } from 'react';
@@ -63,7 +65,7 @@ const NavButtons = () => {
     );
 };
 
-const LangSelector = () => {
+const LangSelector = (props: { m? : boolean }) => {
 
     const [clicked,setClicked] = useState(GetLanguage());
     const handleClick = (index : string) => {
@@ -75,13 +77,28 @@ const LangSelector = () => {
         setClicked(GetLanguage())
     }, [])
 
-    return <div className={Style.langSelector}>
-        <h2 className={ (clicked == "it-IT") ? Style.clicked : "" } onClick={() => handleClick("it-IT")}>IT</h2>
-        <h2 className={ (clicked == "en-US") ? Style.clicked : "" } onClick={() => handleClick("en-US")}>EN</h2>
+    return <div className={props.m ? MobileNavC.langSelector : Style.langSelector}>
+        <h2 className={ (clicked === "it-IT") ? Style.clicked : "" } onClick={() => handleClick("it-IT")}>IT</h2>
+        <h2 className={ (clicked === "en-US") ? Style.clicked : "" } onClick={() => handleClick("en-US")}>EN</h2>
     </div>
 }
 
-const NavBar = (props: NavProps) => {
+const MobileNav = () => {
+    return <div className={MobileNavC.root}>
+        <div className={MobileNavC.navContent}>
+            <h1 className={MobileNavC.title}>IS</h1>
+            <LangSelector m={true} />
+            <div className={MobileNavC.navIcon}><BarsSolid /></div>
+        </div>
+    </div>
+}
+
+const NavBar = () => {
+    const displayWidth = window.innerWidth;
+    
+    if (displayWidth <= 950) return <MobileNav />;
+
+
     return (
         <div className={Style.navbar}>
             <div className={Style.navContent}>

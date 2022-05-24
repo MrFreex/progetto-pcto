@@ -1,7 +1,8 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Home.module.css';
 import Locals from '../library/Localization';
-import { Lateral, RedLineRight, RedLineLeft, Localize as L } from './Util';
+import { Lateral, RedLineLeft, Localize as L } from './Util';
+import { useState } from 'react';
 
 interface RouterProps {
     set: Function;
@@ -9,6 +10,7 @@ interface RouterProps {
 }
 
 const HomeContent = () => {
+    // const [show, setShow] = useState(false);
     return (
         <>
             <div>
@@ -20,10 +22,16 @@ const HomeContent = () => {
 
             <div></div>
 
+            { /** {onMouseEnter={() => {setShow(!show)}}} */ }
+
             <div>
-                <p className={Style.list}> &gt; </p>
+                <p className={Style.list} > &gt; </p>
                 <p className={Style.pgCont}><L string={Locals.home.home_content} /></p>
             </div>
+
+            {/** show ? <div>
+                    <p> test </p>
+            </div> : "" */}
 
             <div></div>
             <div></div>

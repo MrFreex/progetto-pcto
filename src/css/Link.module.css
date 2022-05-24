@@ -3,9 +3,20 @@
     max-height: 100vh;
 }
 
+
+
 .router {
     position: absolute;
     left: 3vw;
     padding: 0 2vh;
     width: 97vw;
+}
+
+@media screen and (max-width: 950px) {
+    .router {
+        top: 5vh;
+        padding: 0;
+        left: 0;
+        width: 100vw;
+    }
 }

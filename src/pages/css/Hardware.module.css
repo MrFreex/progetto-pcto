@@ -1,25 +1,16 @@
-.small_title {
-    font-family: 'Manrope';
-    font-size: 35px;
-    margin-bottom: 1vh;
-    color: #FF4747;
-}
 
-.normalText{
-    margin-top: 1%;
-    margin-left: 2%;
-    display: inline-block;
+.title{
+    margin-left: 3vh;
     font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: left;
-    color: #ffffff;
+    font-size: 4vh;
+    margin-bottom: 1vh;
+    color: #FF4747
 }
 
 img{
     margin-left: 5%;
+    border-radius: 1vh;
+
 }
 
 .img{
