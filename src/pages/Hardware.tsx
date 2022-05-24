@@ -40,9 +40,7 @@ const Argument = styled.p`
     color: #fff;
 `;
 
-// Ogni tanto il translator non worka mhh
-// abbiamo scoperto che il cambio lingua sulla pagina Coding fa crashare il sito, solo su quella però
-//praticamente se metti in inglese dentro quella pagina crasha tutto    
+  
 const HardwareContent = () => {
     return (
         <>
@@ -78,11 +76,11 @@ const HardwareContent = () => {
                 <Argument><L string={Locals.hardware.hardware_p_8}></L></Argument>
             </RedLineLeft>
 
-            <img src={Components} alt="" />
+            <img src={Components} className={Style.img} alt="" />
 
             <ArgumentTitle><L string={Locals.hardware.hardware_p_9}></L></ArgumentTitle>
 
-            <img src={HardDrive} alt="" />
+            <img src={HardDrive} className={Style.img} alt="" />
 
             <RedLineLeft>
                 <Argument><L string={Locals.hardware.hardware_p_10}></L></Argument>
@@ -92,7 +90,7 @@ const HardwareContent = () => {
 
             <ArgumentTitle><L string={Locals.hardware.hardware_p_12}></L></ArgumentTitle>
             
-            <img src={Motherboard} alt="" />
+            <img src={Motherboard} className={Style.img} alt="" />
 
             <RedLineLeft>
                 <Argument><L string={Locals.hardware.hardware_p_13}></L></Argument>
@@ -102,7 +100,7 @@ const HardwareContent = () => {
 
             <ArgumentTitle><L string={Locals.hardware.hardware_p_15}></L></ArgumentTitle>
 
-            <img src={CPU} alt="" />
+            <img src={CPU} className={Style.img} alt="" />
             
             <RedLineLeft>
                 <Argument><L string={Locals.hardware.hardware_p_16}></L></Argument>
@@ -110,7 +108,7 @@ const HardwareContent = () => {
 
             <ArgumentTitle><L string={Locals.hardware.hardware_p_17}></L></ArgumentTitle>
 
-            <img src={RAM} alt="" />
+            <img src={RAM} className={Style.img} alt="" />
 
             <RedLineLeft>
                 <Argument><L string={Locals.hardware.hardware_p_18}></L></Argument>
@@ -118,7 +116,7 @@ const HardwareContent = () => {
 
             <ArgumentTitle><L string={Locals.hardware.hardware_p_19}></L></ArgumentTitle>
 
-            <img src={GraphicsCard} alt="" />
+            <img src={GraphicsCard} className={Style.img} alt="" />
 
             <RedLineLeft>
                 <Argument><L string={Locals.hardware.hardware_p_20}></L></Argument>
@@ -128,7 +126,7 @@ const HardwareContent = () => {
 
             <ArgumentTitle><L string={Locals.hardware.hardware_p_22}></L></ArgumentTitle>
 
-            <img src={NetworkCard} alt="" />
+            <img src={NetworkCard} className={Style.img} alt="" />
 
             <RedLineLeft>
                 <Argument><L string={Locals.hardware.hardware_p_23}></L></Argument>
@@ -136,7 +134,7 @@ const HardwareContent = () => {
 
             <ArgumentTitle><L string={Locals.hardware.hardware_p_24}></L></ArgumentTitle>
 
-            <img src={SoundCard} alt="" />
+            <img src={SoundCard} className={Style.img} alt="" />
 
             <RedLineLeft>
                 <Argument><L string={Locals.hardware.hardware_p_25}></L></Argument>

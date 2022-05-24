@@ -165,6 +165,20 @@ const Locals = {
                 </>
             }
         },
+        "crypting_p_5": {
+            "en-US" : () => {
+                return <> RSA (Rivest, Shamir and Adleman) is another example of a widely used asymmetric cryptographic algorithm: 
+                it is often used in e-commerce protocols such as SSL and is considered secure due to sufficiently long keys
+                and the use of up-to-date implementations.</>
+            },
+
+            "it-IT" : () => {
+                return <>  L’RSA (Rivest, Shamir e Adleman) è un altro esempio di algoritmo a crittografia asimmetrica 
+                ampiamente utilizzato: è spesso usato nei protocolli del commercio elettronico come SSL ed è ritenuto
+                 sicuro per via delle chiavi sufficientemente lunghe e dell’uso di implementazioni aggiornate. 
+                </>
+            }
+        },
 
         "crypting_cryptomath": {
             "en-US": () => {
@@ -860,6 +874,26 @@ const Locals = {
                 i propri suoni.</>
             }
         }
+    },
+
+    evolution : {
+        "evolutio_title": {
+            "en-US" : () => {
+                return <> Evolution</>
+            },
+            "it-IT" : () => {
+                    return <> Evoluzione</>
+                }
+            },
+        "evolution_p_1": {
+            "en-US" : () => {
+                return <>  </>
+            },
+
+            "it-IT" : () => {
+                return <> </>
+            }
+        },
     },
 
 

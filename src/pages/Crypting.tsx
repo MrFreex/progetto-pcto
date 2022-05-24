@@ -42,6 +42,7 @@ const CryptingContent = () => {
             </RedLineRight>
 
             <div></div>
+            <div></div>
 
             <RedLineLeft>
                 <p className={GStyle.text}>
