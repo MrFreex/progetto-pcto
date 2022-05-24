@@ -1,4 +1,4 @@
-import { Children, useState, cloneElement, SetStateAction } from 'react';
+import { Children, useState, useRef, cloneElement, SetStateAction } from 'react';
 import { Animate } from '../components/AnimatedSlider';
 
 import LinkStyle from '../css/Link.module.css';
@@ -11,7 +11,7 @@ let setPage: React.Dispatch<React.SetStateAction<number>>;
 
 const Router = (props: myProps) => {
     const [index, setActive] = useState(process.env.NODE_ENV === 'development' ? 0 : 0);
-
+    const rRef = useRef()
     setPage = setActive;
 
     const childrenWithExtraProp = Children.map(props.children, (child) => {
@@ -21,7 +21,7 @@ const Router = (props: myProps) => {
     });
 
     return (
-        <div className={LinkStyle.router} style={{ overflow: 'auto' }}>
+        <div ref={rRef} className={LinkStyle.router} style={{ overflow: 'auto' }}>
             {childrenWithExtraProp[index]}
         </div>
     );

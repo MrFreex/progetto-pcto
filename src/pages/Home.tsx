@@ -28,6 +28,10 @@ const HomeContent = () => {
             <div></div>
             <div></div>
 
+            <div>
+                &copy; Fabio, Alessandro, Filippo, Enrico
+            </div>
+
             <RedLineLeft>
                 <p className={GStyle.text}>
                     <L string={Locals.home.home_p_1} />

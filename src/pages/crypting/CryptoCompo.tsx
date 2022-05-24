@@ -54,7 +54,7 @@ class App extends React.Component <{}, {
     })
   }
 
-  addLine = (line : string) => {
+  addLine = (line: string) => {
     var copy = this.state.text
     copy.push(line)
     this.setState({
@@ -124,16 +124,15 @@ class App extends React.Component <{}, {
   
   }
 
-  buttonPressed = async (type : string) => {
+  buttonPressed = async (type: string) => {
     if (this.state.runState === -2 || this.state.runState === -3) {
-
-      await this.setState({
+      this.setState({
         runState : -1
       })
     }
 
     if (type === "step") {
-      await this.setState({
+      this.setState({
         runState : this.state.runState + 1
       })
     

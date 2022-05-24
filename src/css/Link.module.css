@@ -6,5 +6,6 @@
 .router {
     position: absolute;
     left: 3vw;
+    padding: 0 2vh;
     width: 97vw;
 }
