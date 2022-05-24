@@ -34,6 +34,15 @@ const CryptingContent = () => {
                 <L string={ Locals.crypting.crypting_p_3 }></L>
                 </p>
             </RedLineLeft>
+
+            <RedLineRight>
+            <p className={Style.normalText}>
+                <L string={ Locals.crypting.crypting_p_4}></L> 
+                </p>
+            </RedLineRight>
+
+            <div></div>
+            
             
         </>
     );

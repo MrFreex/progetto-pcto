@@ -149,6 +149,23 @@ const Locals = {
             }
         },
 
+        "crypting_p_4": {
+            "en-US" : () => {
+                return <> The most common algorithm used in a symmetric key is AES (Advanced Encryption Standard).
+                 It consists of three block cipher algorithms, AES-128, AES-192 and AES-256, each of which is considered 
+                 sufficient to protect government information classified up to the "secret" level, the so-called "top secret"
+                  information is called keys with length 192 or 256 bits.</>
+            },
+
+            "it-IT" : () => {
+                return <>  L’algoritmo più diffuso utilizzato in crittografia a chiave simmetrica è AES (Advanced Encryption Standard). 
+                Si compone di tre algoritmi di cifrature a blocchi, AES-128, AES-192 e AES-256, ognuno dei quali è ritenuto sufficiente 
+                a proteggere informazioni governative classificate fino al livello “secret”, mentre le informazioni cosiddette “top secret”
+                 richiedono chiavi con lunghezza 192 o 256 bit.
+                </>
+            }
+        },
+
         "crypting_cryptomath": {
             "en-US": () => {
                 return <>
