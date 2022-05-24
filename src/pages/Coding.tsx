@@ -22,11 +22,11 @@ const CodingContent = () => {
             </div>
             <div></div>
 
-            <RedLineLeft>
+            <RedLineRight>
                 <p className={GStyle.text}>
                 <L string={ Locals.coding.coding_p_1}></L>
                 </p>
-            </RedLineLeft>
+            </RedLineRight>
 
             <div></div>
             <div></div>
@@ -42,11 +42,11 @@ const CodingContent = () => {
             </p>
 
             <div></div>
-            <RedLineLeft>
+            <RedLineRight>
                 <p className={GStyle.text}>
                 <L string={ Locals.coding.coding_p_4}></L>
                 </p>
-            </RedLineLeft>
+            </RedLineRight>
 
             <div>
                 <img className={Style.images} src={Korotkevich} alt=""></img>

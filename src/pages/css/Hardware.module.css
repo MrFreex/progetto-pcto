@@ -18,6 +18,10 @@
     color: #ffffff;
 }
 
-.img{
+img{
     margin-left: 5%;
+}
+
+.img{
+    width: 25em;
 }

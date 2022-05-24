@@ -22,23 +22,22 @@ interface RouterProps {
 const ArgumentTitle = styled.p`
     margin-left: 3vh;
     font-family: 'Manrope';
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 1vh;
     color: #FF4747;
 `;
 
 const Argument = styled.p`
-    margin-top: 1%;
-    margin-left: 2%;
-    display: inline-block;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 100;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: left;
-    color: #fff;
+    font-size: 2.4vh;
+    line-height: 3.2vh;
+    text-align: right;
+    color: #ffffff;
+    margin-right: 3%;
 `;
+
 
   
 const HardwareContent = () => {
@@ -76,7 +75,7 @@ const HardwareContent = () => {
                 <Argument><L string={Locals.hardware.hardware_p_8}></L></Argument>
             </RedLineLeft>
 
-            <img src={Components} className={Style.img} alt="" />
+            <img src={Components} alt="" />
 
             <ArgumentTitle><L string={Locals.hardware.hardware_p_9}></L></ArgumentTitle>
 
