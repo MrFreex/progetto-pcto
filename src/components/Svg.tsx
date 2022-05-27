@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, MouseEventHandler } from 'react';
 import styled from 'styled-components';
 
 const InnerSvg = styled.div``;
@@ -7,6 +7,7 @@ interface SvgProps {
     icon: string;
     style: any;
     className: string;
+    onClick? : MouseEventHandler<HTMLDivElement>;
 }
 
 const Svg = (props: SvgProps) => {
@@ -25,7 +26,7 @@ const Svg = (props: SvgProps) => {
     });
 
     return (
-        <InnerSvg className={props.className} style={style}>
+        <InnerSvg onClick={props.onClick} className={props.className} style={style}>
             {Icon}
         </InnerSvg>
     );

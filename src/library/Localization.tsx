@@ -1,4 +1,15 @@
 import React from "react"
+import { Svg } from "../components/Svg"
+
+const GitHubLink = (props: { children : Element | string, link : string }) => {
+    return <a href={"https://github.com/" + props.link} title={"GitHub: " + props.link}>
+        {props.children}
+    </a>
+}
+
+const SummaryIcon = (props: { icon:string, children : any, index : number }) => {
+    return <li><Svg style={{ display : "inline-block", fill: "white", transform: "translate(0,25%)", fontSize: "100%" }} className="" icon={props.icon}></Svg>{props.children}</li>
+}
 
 const Locals = {
     home : {
@@ -29,6 +40,69 @@ const Locals = {
                 Un po’ di Hardware dei noi PC e addirittura alcune nozioni sul Web Market. </>
             }
         },
+
+        "home_intro" : {
+            "en-US" : () => { return <>
+                IStory.net (Internet Story) is a website that briefly tells about the Internet and computers' Story. Made by <GitHubLink link={"MrFreex"} >Filippo Lissandrin</GitHubLink>, <GitHubLink link="monniale">Alessandro Monni</GitHubLink>, <GitHubLink link="f3yor">Fabio Venturini</GitHubLink> and <GitHubLink link="HerryYT">Enrico Angelon</GitHubLink> for
+                a school project, the website aims to provide a brief summary about the notable facts which led to the platform that you are ( even without knowing it ) using right now. This website is indeed built on a modern framework
+                for the object oriented making of websites: <a rel="noreferrer" target="_blank" href="https://it.reactjs.org/">React.js</a>. <br></br>
+                At the right of the page you can find a list describing the content of the website, page by page.
+            </> },
+
+            "it-IT" : () => { return <>
+                IStory.net (Internet Story) è un sito web che racconta in breve la storia dell'internet e dei computer. Realizzato da <GitHubLink link={"MrFreex"} >Filippo Lissandrin</GitHubLink>, <GitHubLink link="monniale">Alessandro Monni</GitHubLink>, <GitHubLink link="f3yor">Fabio Venturini</GitHubLink> ed <GitHubLink link="HerryYT">Enrico Angelon</GitHubLink> per
+                un progetto scolastico, mira a fare un breve sunto dei fatti notevoli con i quali si è arrivato alla piattaforma che tutt'ora (senza saperlo) stai usando. Il sito è infatti costruito su un framework
+                moderno per la realizzazione object oriented di siti web: <a rel="noreferrer" target="_blank" href="https://it.reactjs.org/">React.js</a>. <br></br>
+                Qui a destra puoi trovare una lista dei contenuti del sito web, pagina per pagina.
+            </> }
+        },
+
+        "home_intro_c" : {
+            "en-US" : () => { 
+                const List = [
+                    { icon : "HouseBlank", text: <>Home (this page)</> },
+                    { icon : "FirstWebsite", text: <>The first website</> },
+                    { icon : "Crypting", giveMargin: "0.8vh", text: <>&nbsp;&nbsp;&nbsp;&nbsp;Crypting</> },
+                    { icon : "Coding", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Coding</> },
+                    { icon : "Market", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Ecommerce</> },
+                    { icon : "Hardware", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Hardware</> },
+                    { icon : "Evolution", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Internet Evolution</> }
+                ]
+
+                return <>
+                    <ul>
+                        { List.map((item, index) => {
+                            return <>
+                                <SummaryIcon key={index} index={index} icon={item.icon}>{item.text}</SummaryIcon>
+                                { item.giveMargin ? <div style={{ marginBottom : (typeof item.giveMargin == "boolean") ? "0.4vh" : item.giveMargin }}></div> : <></> }
+                            </> 
+                        })}
+                    </ul>
+                </>
+            },
+            "it-IT" : () => { 
+
+                const List = [
+                    { icon : "HouseBlank", text: <>Home (questa pagina)</> },
+                    { icon : "FirstWebsite", text: <>Il primo sito web</> },
+                    { icon : "Crypting", giveMargin: "0.8vh", text: <>&nbsp;&nbsp;&nbsp;&nbsp;La criptazione</> },
+                    { icon : "Coding", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;La programmazione</> },
+                    { icon : "Market", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;L'Ecommerce</> },
+                    { icon : "Hardware", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;L'Hardware</> },
+                    { icon : "Evolution", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;L'Evoluzione</> }
+                ]
+
+                return <>
+                <ul>
+                    { List.map((item, index) => {
+                        return <>
+                            <SummaryIcon key={index} index={index} icon={item.icon}>{item.text}</SummaryIcon>
+                            { item.giveMargin ? <div style={{ marginBottom : (typeof item.giveMargin == "boolean") ? "0.4vh" : item.giveMargin }}></div> : <></> }
+                        </> 
+                    })}
+                </ul>
+            </> }
+        }
     },
 
     web : {

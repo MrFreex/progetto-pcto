@@ -43,3 +43,15 @@ h3 {
 ::-webkit-scrollbar-thumb:hover {
     background: #5a636b;
 }
+
+a {
+    color: #FF4747;
+}
+
+a:active {
+    color: #FF4747;
+}
+
+a:visited {
+    color: #aa1717;
+}
