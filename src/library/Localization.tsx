@@ -65,8 +65,7 @@ const Locals = {
                     { icon : "Crypting", giveMargin: "0.8vh", text: <>&nbsp;&nbsp;&nbsp;&nbsp;Crypting</> },
                     { icon : "Coding", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Coding</> },
                     { icon : "Market", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Ecommerce</> },
-                    { icon : "Hardware", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Hardware</> },
-                    { icon : "Evolution", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Internet Evolution</> }
+                    { icon : "Hardware", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;Hardware</> }
                 ]
 
                 return <>
