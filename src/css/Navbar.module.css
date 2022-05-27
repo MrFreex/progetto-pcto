@@ -1,0 +1,95 @@
+.navbar {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    height: 100%;
+    width: 3vw;
+    background: #212529;
+}
+
+.navContent {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.langSelector > h2 {
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+}
+
+.clicked {
+    color: #eb5d5d;
+}
+
+.langSelector > h2:hover {
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    color: #eb5d5d;
+    transition: 0.15s;
+}
+
+.title {
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    font-size: 1.7vw;
+    margin: 1vh;
+}
+
+.title::first-letter {
+    color: #eb5d5d;
+    text-shadow: 0px 0px 3px #ff4747;
+}
+
+.navContent > * {
+    display: block;
+}
+
+.NavButton > svg {
+    fill: #c4c4c4;
+    height: 2vw;
+    text-align: center;
+    width: 75%;
+    transition: 0.15s;
+}
+
+.NavButton > svg:hover,
+.navClicked > svg {
+    fill: #ff4747;
+    filter: drop-shadow(0px 0px 4px #ff6c6c);
+    cursor: pointer;
+}
+
+.NavButton {
+    display: block;
+    position: relative;
+}
+
+.NavLink {
+    margin: 0.7vh 0;
+    height: 4.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navButtons {
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1280px) {
+    /*  Per tablet*/
+    .NavLink {
+        margin: 0.4vh 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .NavLink {
+        margin: 0.1vh 0;
+    }
+}

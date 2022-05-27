@@ -1,0 +1,21 @@
+.images{
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    display: block;
+}
+
+.textleft{
+    text-align: left;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 68px;
+    color: #ffffff;
+    margin-left: 8%;
+}
+
+.textRed{
+    color: #ff4747;
+}

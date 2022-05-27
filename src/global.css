@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap');
+
+body {
+    /*background: #343a40;  originale*/
+    background: #262c30; /*Più scuro*/
+    padding: 0;
+    margin: 0;
+    font-family: Manrope;
+    color: #fff;
+    overflow: hidden;
+}
+
+:root {
+    --mainColor: #FF4747;
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-family: Montserrat;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*Track */
+::-webkit-scrollbar-track {
+    background: #212529;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6c757d;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5a636b;
+}

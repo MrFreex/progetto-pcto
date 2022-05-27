@@ -1,0 +1,20 @@
+.gridLayout {
+    display: grid;
+    grid-template-columns: auto ;
+}
+
+.gridLayout > div:nth-child(even) {
+    margin-left: 3vw;
+}
+
+
+.frame{
+    margin-left: 10%;
+    border-style: none;
+    width: 80%;
+    min-height: 45vh;
+}
+
+.frame > * {
+    color: black !important;
+}

@@ -1,0 +1,73 @@
+.title,
+.title0 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 3.5vw;
+    color: #fff;
+    width: 1.5rem;
+    display: inline-block;
+    transition: 0.15s;
+    margin: 0;
+}
+
+.title0:hover {
+    width: 14vw;
+}
+
+.title0:hover::after {
+    content: 'nternet';
+}
+
+.title0 {
+    color: #ff4747;
+}
+
+
+
+.list {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 5vh;
+    display: inline-block;
+    margin-left: 2vh;
+    color: #ff4747;
+    transition: 0.15s;
+}
+
+@media screen and (max-width: 950px) {
+    .title0,.title {
+        margin: 2vw 0;
+        font-size: 10vw;
+        width: 1rem;
+    }
+
+    .list {
+        font-size: 4vh;
+    }
+}
+
+.list:hover {
+    transform: rotate(90deg);
+}
+
+.args{
+    display: none;
+}
+
+.list:hover ~ .args li{
+    display: block;
+}
+
+.pgCont {
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 1%;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 3vh;
+    line-height: 59px;
+    color: #fff;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
