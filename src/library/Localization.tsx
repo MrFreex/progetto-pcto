@@ -14,11 +14,19 @@ const Locals = {
 
         "home_content" : {
             "en-US" : () => {
-                return <> Page content </>
+                return <> &gt; IStory.net is a website made from us 4: Filippo Lissandrin, Fabio Venturini, Alessandro Monni ed Enrico Angelon.
+                In this website you can find the story of internet:
+                - How the web is born
+                - Che cosa sono il Crypting e il Coding
+                - Un po’ di Hardware dei noi PC e addirittura alcune nozioni sul Web Market. </>
             },
 
             "it-IT": () => {
-                return <> Contenuto </>
+                return <> &gt; IStory.net è un sito web ideato da noi 4: Filippo Lissandrin, Fabio Venturini, Alessandro Monni ed Enrico Angelon.
+                In questo sito troverai la storia di internet:
+                Come è nato il Web
+                Che cosa sono il Crypting e il Coding
+                Un po’ di Hardware dei noi PC e addirittura alcune nozioni sul Web Market. </>
             }
         },
     },
