@@ -1,7 +1,7 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Home.module.css';
 import Locals from '../library/Localization';
-import { Lateral, RedLineLeft, Localize as L } from './Util';
+import { Lateral, RedLineLeft, RedLineRight, Localize as L } from './Util';
 import { useState } from 'react';
 import Footer from './Footer';
 
@@ -23,16 +23,9 @@ const HomeContent = () => {
 
             <div></div>
 
-            { /** {onMouseEnter={() => {setShow(!show)}}} */ }
 
-            <div>
-                <p className={Style.list} > &gt; </p>
-                <p className={Style.pgCont}><L string={Locals.home.home_content} /></p>
-            </div>
+            <div></div>
 
-            {/** show ? <div>
-                    <p> test </p>
-            </div> : "" */}
 
             <div></div>
             <div></div>
@@ -42,6 +35,16 @@ const HomeContent = () => {
                     <L string={Locals.home.home_p_1} />
                 </p>
             </RedLineLeft>
+
+            
+                <p className={GStyle.text}>
+                    <L string={Locals.home.home_p_1} /> {/*obbiettivi e spiegazione*/}
+                </p>
+            
+                <p className={GStyle.text}>
+                    <L string={Locals.home.home_p_1} /> {/*contenuto pagine*/}
+                </p>
+            
         </>
     );
 };

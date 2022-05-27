@@ -28,7 +28,7 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 300;
-    font-size: 3vh;
+    font-size: 5vh;
     display: inline-block;
     margin-left: 2vh;
     color: #ff4747;
@@ -48,7 +48,7 @@
 }
 
 .list:hover {
-    transform: translate(1vh);
+    transform: rotate(90deg);
 }
 
 .args{

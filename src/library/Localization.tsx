@@ -987,6 +987,16 @@ const Locals = {
                 "it-IT": () => {
                     return <>Eliminando <span style={{ fontFamily: "initial" }}>il font default HTML</span></>
                 }
+            },
+
+            {
+                "en-US": () => {
+                    return <>Creating <i>personaggi.html</i></>
+                },
+
+                "it-IT": () => {
+                    return <>Scrivendo <i>personaggi.html</i></>
+                }
             }
         ]
     }
