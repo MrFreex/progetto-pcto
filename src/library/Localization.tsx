@@ -87,8 +87,7 @@ const Locals = {
                     { icon : "Crypting", giveMargin: "0.8vh", text: <>&nbsp;&nbsp;&nbsp;&nbsp;La criptazione</> },
                     { icon : "Coding", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;La programmazione</> },
                     { icon : "Market", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;L'Ecommerce</> },
-                    { icon : "Hardware", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;L'Hardware</> },
-                    { icon : "Evolution", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;L'Evoluzione</> }
+                    { icon : "Hardware", giveMargin: true, text: <>&nbsp;&nbsp;&nbsp;&nbsp;L'Hardware</> }
                 ]
 
                 return <>
