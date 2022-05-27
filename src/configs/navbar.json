@@ -1,17 +1,17 @@
 {
     "buttons": [
         {
-            "name": "home",
+            "name": "Home",
             "icon": "HouseBlank"
         },
 
         {
-            "name": "first-website",
+            "name": "First Website",
             "icon": "Ethernet"
         },
 
         {
-            "name": "crypting",
+            "name": "Crypting",
             "icon": "Crypting"
         },
 

@@ -10,6 +10,7 @@ import RAM from '../images/RAM.gif';
 import GraphicsCard from '../images/graphicsCard.gif';
 import NetworkCard from '../images/networkCard.gif';
 import SoundCard from '../images/soundCard.gif';
+import Footer from './Footer';
 
 
 interface RouterProps {
@@ -55,7 +56,7 @@ const HardwareContent = () => {
 
             <img src={Components} alt="" />
 
-            <p className={Style.title}><L string={Locals.hardware.hardware_p_9}></L></p>
+            <p id="Ciao" className={Style.title}><L string={Locals.hardware.hardware_p_9}></L></p>
 
             <img src={HardDrive} className={Style.img} alt="" />
 
@@ -116,15 +117,19 @@ const HardwareContent = () => {
             <RedLineLeft>
                 <p className={GStyle.text}><L string={Locals.hardware.hardware_p_25}></L></p>
             </RedLineLeft>
+
         </>
     );
 };
 
 const Hardware = (props: RouterProps) => {
     return (
-        <div>
-            <HardwareContent></HardwareContent>
-        </div>
+        <>
+            <div>
+                <HardwareContent></HardwareContent>
+            </div>
+            <Footer></Footer>
+        </>
     );
 };
 

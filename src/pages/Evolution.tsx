@@ -1,6 +1,7 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Evolution.module.css';
 import { Lateral, RedLineLeft, RedLineRight } from './Util';
+import Footer from './Footer';
 
 interface RouterProps {
     set: Function;
@@ -16,15 +17,19 @@ const EvolutionContent = () => {
     return (
         <>
         <div></div>
+
         </>
     );
 };
 
 const Evolution = (props: RouterProps) => {
     return (
-        <div className={GStyle.gridLayout}>
-            <EvolutionContent></EvolutionContent>
-        </div>
+        <>
+            <div className={GStyle.gridLayout}>
+                <EvolutionContent></EvolutionContent>
+            </div>
+            <Footer></Footer>
+        </>
     );
 };
 

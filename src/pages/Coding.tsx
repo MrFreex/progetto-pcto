@@ -4,6 +4,7 @@ import Locals from '../library/Localization';
 import Korotkevich from '../images/Korotkevich.jpg';
 import Terry from '../images/Terry-Davis.jpg';
 import Female from '../images/Female-developers.png';
+import Footer from './Footer';
 import { Lateral, RedLineLeft, RedLineRight, Localize as L  } from './Util';
 
 interface RouterProps {
@@ -103,15 +104,19 @@ const CodingContent = () => {
                     </p>
                 </RedLineLeft>
             </div>
+
         </>
     );
 };
 
 const Coding = (props: RouterProps) => {
     return (
-        <div className={GStyle.gridLayout}>
-            <CodingContent></CodingContent>
-        </div>
+        <>
+            <div className={GStyle.gridLayout}>
+                <CodingContent></CodingContent>
+            </div>
+            <Footer></Footer>
+        </>
     );
 };
 

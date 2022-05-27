@@ -6,6 +6,7 @@ import { Link } from '../library/ConditionalRouter';
 import Config from '../configs/navbar.json';
 import { useEffect, useState } from 'react';
 import { ChooseLanguage, GetLanguage } from '../pages/Util'
+import HouseBlank from '../svg/HouseBlank';
 
 
 interface NavProps {}
@@ -83,30 +84,92 @@ const LangSelector = (props: { m? : boolean }) => {
     </div>
 }
 
+const NavRow = (props: INavButton) => {
+    return (
+        <div className={MobileNavC.navRow}>
+            <Link onClick={props.onClick} className={Style.NavLink} to={props.to}>
+                <Svg
+                    style={{}}
+                    className={MobileNavC.navRow + ' ' + (props.clicked ? Style.navClicked : '')}
+                    icon={props.icon}
+                />
+            </Link>
+            <div><div>{props.title}</div></div>
+        </div>
+    );
+}
+
 const MobileNav = () => {
-    return <div className={MobileNavC.root}>
+    const [open, setOpen] = useState(false);
+    console.log("Update")
+    return <>
+        { open && (
+            
+            <div className={MobileNavC.nav}>
+                <div className={MobileNavC.navRows}>
+                {Config.buttons.map((value, index) => {
+                    return (
+                        <NavRow
+                            key={index}
+                            onClick={() => {
+                                setTimeout(() => {
+                                    setOpen(false)
+                                }, 10)
+                            }}
+                            clicked={false}
+                            title={value.name}
+                            to={index}
+                            icon={value.icon}
+                        />
+                    );
+                })}
+                </div>
+            </div>
+
+            )
+        }
+        <div className={MobileNavC.root}>
         <div className={MobileNavC.navContent}>
             <h1 className={MobileNavC.title}>IS</h1>
             <LangSelector m={true} />
-            <div className={MobileNavC.navIcon}><BarsSolid /></div>
+            <div className={MobileNavC.navIcon} onClick={() => setTimeout(() => setOpen(!open), 10) }><BarsSolid /></div>
         </div>
-    </div>
+        
+        
+    </div></>
 }
 
 const NavBar = () => {
-    const displayWidth = window.innerWidth;
-    
-    if (displayWidth <= 950) return <MobileNav />;
 
+    const [isMobile, setMobile] = useState(window.innerWidth <= 950);
+    useEffect(() => {
+        const handler = (e : any) => {
+            setTimeout(() => {
+                console.log("Exec")
+                if (isMobile && window.innerWidth > 950) {
+                    return setMobile(false); 
+                } else if (!isMobile && window.innerWidth < 950) {
+                    return setMobile(true);
+                } 
+            }, 10)
+        }
+        
+        window.addEventListener('resize', handler)
 
-    return (
-        <div className={Style.navbar}>
-            <div className={Style.navContent}>
-                <h1 className={Style.title}>IS</h1>
-                <NavButtons />
-                <LangSelector />
+        return () =>  window.removeEventListener('resize', handler)
+    }, [isMobile])
+
+    return ( <>
+        { isMobile ? <MobileNav /> : 
+            <div className={Style.navbar}>
+                <div className={Style.navContent}>
+                    <h1 className={Style.title}>IS</h1>
+                    <NavButtons />
+                    <LangSelector />
+                </div>
             </div>
-        </div>
+        }
+        </>
     );
 };
 

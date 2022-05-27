@@ -7,7 +7,8 @@
     background-color: #ff4747;
     border-radius: 15px;
     display: block;
-    margin: 2vh 1.1vh;
+    width: 2px;
+    margin: 20% 47%;
 }
 
 .RedLineRight {
@@ -19,5 +20,6 @@
     background-color: #ff4747;
     border-radius: 15px;
     display: block;
-    margin: 2vh 1.1vh;
+    width: 2px;
+    margin: 20% 47%;
 }

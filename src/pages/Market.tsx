@@ -1,6 +1,7 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Market.module.css';
 import Locals from '../library/Localization';
+import Footer from './Footer';
 import { Lateral, RedLineLeft, Localize as L } from './Util';
 
 interface RouterProps {
@@ -55,15 +56,19 @@ const MarketContent = () => {
                 </RedLineLeft>
             </div>
 
+            
         </>
     );
 };
 
 const Market = (props: RouterProps) => {
     return (
-        <div className={Style.gridLayout}>
-            <MarketContent></MarketContent>
-        </div>
+        <>
+            <div className={Style.gridLayout}>
+                <MarketContent></MarketContent>
+            </div>
+            <Footer></Footer>
+        </>
     );
 };
 

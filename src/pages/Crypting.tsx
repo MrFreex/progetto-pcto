@@ -2,6 +2,7 @@ import GStyle from './css/Root.module.css';
 import Style from './css/Crypting.module.css';
 import Locals from '../library/Localization';
 import CryptoCompo from './crypting/CryptoCompo';
+import Footer from './Footer';
 import { Lateral, RedLineLeft, RedLineRight, Localize as L, Title } from './Util';
 
 interface RouterProps {
@@ -49,7 +50,7 @@ const CryptingContent = () => {
                 <L string={ Locals.crypting.crypting_p_5 }></L>
                 </p>
             </RedLineLeft>
-            
+
         </>
     );
 };
@@ -61,6 +62,7 @@ const Crypting = (props: RouterProps) => {
         </div> 
         <Title>{Locals.crypting.crypting_cryptomath}</Title>
         <CryptoCompo />
+        <Footer></Footer>
     </> );
 };
 

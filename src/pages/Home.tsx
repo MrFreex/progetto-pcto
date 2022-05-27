@@ -3,6 +3,7 @@ import Style from './css/Home.module.css';
 import Locals from '../library/Localization';
 import { Lateral, RedLineLeft, Localize as L } from './Util';
 import { useState } from 'react';
+import Footer from './Footer';
 
 interface RouterProps {
     set: Function;
@@ -36,10 +37,6 @@ const HomeContent = () => {
             <div></div>
             <div></div>
 
-            <div>
-                &copy; Fabio, Alessandro, Filippo, Enrico
-            </div>
-
             <RedLineLeft>
                 <p className={GStyle.text}>
                     <L string={Locals.home.home_p_1} />
@@ -51,9 +48,12 @@ const HomeContent = () => {
 
 const Home = (props: RouterProps) => {
     return (
-        <div className={GStyle.gridLayout}>
-            <HomeContent></HomeContent>
-        </div>
+        <>
+            <div className={GStyle.gridLayout}>
+                <HomeContent></HomeContent>
+            </div>
+            <Footer></Footer>
+        </>
     );
 };
 

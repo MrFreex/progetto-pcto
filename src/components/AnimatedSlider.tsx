@@ -12,6 +12,10 @@ const AnimDiv = styled.div`
     z-index: 999999;
     height: 0;
     width: 97vw;
+    @media (max-width: 950px) {
+        left: 0;
+        width: 100vw;
+    }
 `;
 
 let stateAnim: any;

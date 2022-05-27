@@ -1,6 +1,7 @@
 import GStyle from './css/Root.module.css';
 import Style from './css/Web.module.css';
 import Locals from '../library/Localization';
+import Footer from './Footer';
 import { Lateral, RedLineLeft, RedLineRight, Localize as L } from './Util';
 
 interface RouterProps {
@@ -65,9 +66,12 @@ const WebContent = () => {
 
 const Web = (props: RouterProps) => {
     return (
-        <div className={GStyle.gridLayout}>
-            <WebContent></WebContent>
-        </div>
+        <>
+            <div className={GStyle.gridLayout}>
+                <WebContent></WebContent>
+            </div>
+            <Footer></Footer>
+        </>
     );
 };
 

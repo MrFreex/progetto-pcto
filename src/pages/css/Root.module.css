@@ -1,10 +1,7 @@
 .gridLayout {
     display: grid;
-    grid-template-columns: calc(50% - 1.5vw) calc(50% - 1.5vw);
-}
-
-.gridLayout > div:nth-child(even) {
-    margin-left: 3vw;
+    column-gap: 7vw;
+    grid-template-columns: calc(50% - 4vw) calc(50% - 4vw);
 }
 
 @media screen and (max-width: 950px) {
@@ -73,5 +70,10 @@
 
     .gray {
         font-size: 5vw;
+    }
+
+    .text{
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 }

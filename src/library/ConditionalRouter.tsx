@@ -1,6 +1,7 @@
 import { Children, useState, useRef, useEffect, cloneElement, SetStateAction } from 'react';
 import { Animate } from '../components/AnimatedSlider';
 
+
 import LinkStyle from '../css/Link.module.css';
 
 interface myProps {
