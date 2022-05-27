@@ -58,7 +58,7 @@
 .NavButton > svg:hover,
 .navClicked > svg {
     fill: #ff4747;
-    filter: drop-shadow(0px 0px 4px #ff6c6c);
+    filter: drop-shadow(0px 0px 3px #ff4747);
     cursor: pointer;
 }
 

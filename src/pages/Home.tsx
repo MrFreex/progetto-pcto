@@ -38,11 +38,11 @@ const HomeContent = () => {
 
             
                 <p className={GStyle.text}>
-                    <L string={Locals.home.home_p_1} /> {/*obbiettivi e spiegazione*/}
+                    <L string={Locals.home.home_intro} /> {/*obbiettivi e spiegazione*/}
                 </p>
             
                 <p className={GStyle.text}>
-                    <L string={Locals.home.home_p_1} /> {/*contenuto pagine*/}
+                    <L string={Locals.home.home_intro_c} /> {/*contenuto pagine*/}
                 </p>
             
         </>

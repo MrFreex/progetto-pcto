@@ -37,18 +37,15 @@ interface LinkI {
     children: any;
     className: any;
     onClick: Function;
+    title : string;
 }
 
 const Link = (props: LinkI) => {
     return (
-        <div
+        <div title={props.title}
             className={`${LinkStyle.Link} ${props.className}`}
             onClick={() => {
-                setTimeout(async () => {
-                    props.onClick();
-                    await Animate();
-                    setPage(props.to as SetStateAction<number>);
-                }, 0);
+                SetPage({ onClick : props.onClick, to: props.to })
             }}
         >
             {props.children}
@@ -56,4 +53,12 @@ const Link = (props: LinkI) => {
     );
 };
 
-export { Router, Link };
+const SetPage = (props: { onClick : Function, to : Number }) => {
+    setTimeout(async () => {
+        props.onClick();
+        await Animate();
+        setPage(props.to as SetStateAction<number>);
+    }, 0);
+}
+
+export { Router, Link, SetPage };

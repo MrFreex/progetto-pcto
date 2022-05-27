@@ -2,7 +2,7 @@ import Style from '../css/Navbar.module.css';
 import MobileNavC from '../css/MobileNav.module.css';
 import { Svg } from './Svg';
 import BarsSolid from '../svg/BarsSolid';
-import { Link } from '../library/ConditionalRouter';
+import { Link, SetPage } from '../library/ConditionalRouter';
 import Config from '../configs/navbar.json';
 import { useEffect, useState } from 'react';
 import { ChooseLanguage, GetLanguage } from '../pages/Util'
@@ -21,7 +21,7 @@ interface INavButton {
 
 const NavButton = (props: INavButton) => {
     return (
-        <Link onClick={props.onClick} className={Style.NavLink} to={props.to}>
+        <Link title={props.title} onClick={props.onClick} className={Style.NavLink} to={props.to}>
             <Svg
                 style={{}}
                 className={Style.NavButton + ' ' + (props.clicked ? Style.navClicked : '')}
@@ -53,7 +53,9 @@ const NavButtons = () => {
                     <NavButton
                         key={index}
                         onClick={() => {
-                            setActive(index);
+                            setTimeout(() => {
+                                setActive(index);
+                            }, 10)
                         }}
                         clicked={active === index}
                         title={value.name}
@@ -70,8 +72,10 @@ const LangSelector = (props: { m? : boolean }) => {
 
     const [clicked,setClicked] = useState(GetLanguage());
     const handleClick = (index : string) => {
-        setClicked(index)
-        ChooseLanguage(index)
+        setTimeout(() => {
+            setClicked(index)
+            ChooseLanguage(index)
+        }, 0)
     }
 
     useEffect(() => {
@@ -86,14 +90,14 @@ const LangSelector = (props: { m? : boolean }) => {
 
 const NavRow = (props: INavButton) => {
     return (
-        <div className={MobileNavC.navRow}>
-            <Link onClick={props.onClick} className={Style.NavLink} to={props.to}>
+        <div onClick={() => SetPage({ to : props.to as Number, onClick: props.onClick })} className={MobileNavC.navRow}>
+            <div className={Style.NavLink}>
                 <Svg
                     style={{}}
                     className={MobileNavC.navRow + ' ' + (props.clicked ? Style.navClicked : '')}
                     icon={props.icon}
                 />
-            </Link>
+            </div>
             <div><div>{props.title}</div></div>
         </div>
     );
