@@ -11,6 +11,10 @@ const SummaryIcon = (props: { icon:string, children : any, index : number }) => 
     return <li><Svg style={{ display : "inline-block", fill: "white", transform: "translate(0,25%)", fontSize: "100%" }} className="" icon={props.icon}></Svg>{props.children}</li>
 }
 
+//Questo componente .tsx permette di inserire i testi di tutto il sito, che noi abbiamo tradotto sia in Italiano che in Inglese.
+//Utilizzando questo componente e importandolo sulle varie pagine come "import Locals from "../library/Localization", siamo in grado di tradurre tutto il sito.
+//ed evitare di scrivere tutto il testo 2 volte nelle singole pagine, creando molta confusione e ripetizione di codice
+
 const Locals = {
     home : {
         "home_p_1": {
@@ -43,14 +47,14 @@ const Locals = {
 
         "home_intro" : {
             "en-US" : () => { return <>
-                IStory.net (Internet Story) is a website that briefly tells about the Internet and computers' Story. Made by <GitHubLink link={"MrFreex"} >Filippo Lissandrin</GitHubLink>, <GitHubLink link="monniale">Alessandro Monni</GitHubLink>, <GitHubLink link="f3yor">Fabio Venturini</GitHubLink> and <GitHubLink link="HerryYT">Enrico Angelon</GitHubLink> for
+                IStory.net (Internet Story) is a website that briefly tells about the Internet and computers' Story. Made by <GitHubLink link={"MrFreex"} >Filippo Lissandrin</GitHubLink>, <GitHubLink link="f3yor">Fabio Venturini</GitHubLink>, <GitHubLink link="monniale">Alessandro Monni</GitHubLink> and <GitHubLink link="HerryYT">Enrico Angelon</GitHubLink> for
                 a school project, the website aims to provide a brief summary about the notable facts which led to the platform that you are ( even without knowing it ) using right now. This website is indeed built on a modern framework
                 for the object oriented making of websites: <a rel="noreferrer" target="_blank" href="https://it.reactjs.org/">React.js</a>. <br></br>
                 At the right of the page you can find a list describing the content of the website, page by page.
             </> },
 
             "it-IT" : () => { return <>
-                IStory.net (Internet Story) è un sito web che racconta in breve la storia dell'internet e dei computer. Realizzato da <GitHubLink link={"MrFreex"} >Filippo Lissandrin</GitHubLink>, <GitHubLink link="monniale">Alessandro Monni</GitHubLink>, <GitHubLink link="f3yor">Fabio Venturini</GitHubLink> ed <GitHubLink link="HerryYT">Enrico Angelon</GitHubLink> per
+                IStory.net (Internet Story) è un sito web che racconta in breve la storia dell'internet e dei computer. Realizzato da <GitHubLink link={"MrFreex"} >Filippo Lissandrin</GitHubLink>, <GitHubLink link="f3yor">Fabio Venturini</GitHubLink>, <GitHubLink link="monniale">Alessandro Monni</GitHubLink> ed <GitHubLink link="HerryYT">Enrico Angelon</GitHubLink> per
                 un progetto scolastico, mira a fare un breve sunto dei fatti notevoli con i quali si è arrivato alla piattaforma che tutt'ora (senza saperlo) stai usando. Il sito è infatti costruito su un framework
                 moderno per la realizzazione object oriented di siti web: <a rel="noreferrer" target="_blank" href="https://it.reactjs.org/">React.js</a>. <br></br>
                 Qui a destra puoi trovare una lista dei contenuti del sito web, pagina per pagina.

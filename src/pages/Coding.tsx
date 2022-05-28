@@ -1,4 +1,4 @@
-import GStyle from './css/Root.module.css';
+import GStyle from './css/Root.module.css'; //Qui stiamo importando i css generali da Root.module.css, rinominandoli in GStyle
 import Style from './css/Coding.module.css';
 import Locals from '../library/Localization';
 import Korotkevich from '../images/Korotkevich.jpg';
@@ -6,6 +6,8 @@ import Terry from '../images/Terry-Davis.jpg';
 import Female from '../images/Female-developers.png';
 import Footer from './Footer';
 import { Lateral, RedLineLeft, RedLineRight, Localize as L  } from './Util';
+
+//Questo è il contenuto della pagina Coding
 
 interface RouterProps {
     set: Function;

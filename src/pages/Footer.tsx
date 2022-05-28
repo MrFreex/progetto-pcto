@@ -1,6 +1,9 @@
-import React from "react";
-import GStyle from './css/Root.module.css';
+/* Queste due istruzioni qui sotto importano dei css detti Scoped, ovvero applicati solo quando referenziati da un elemento */
+import GStyle from './css/Root.module.css'; 
 import Style from './css/Footer.module.css';
+import React from "react";
+
+//Questo è il contenuto del footer
 
 const FooterContent = () => {
     return (

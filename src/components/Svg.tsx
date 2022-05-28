@@ -1,6 +1,10 @@
 import { useEffect, useState, MouseEventHandler } from 'react';
 import styled from 'styled-components';
 
+
+//Questo è un componente che abbiamo creato per poter lavorare in React con i file .svg
+
+
 const InnerSvg = styled.div``;
 
 interface SvgProps {

@@ -1,8 +1,12 @@
+/* Queste due istruzioni qui sotto importano dei css detti Scoped, ovvero applicati solo quando referenziati da un elemento */
 import GStyle from './css/Root.module.css';
 import Style from './css/Market.module.css';
+/*Queste istruzioni importano Locals, ovvero le traduzioni; il footer e le varie decoorazioni del testo.*/
 import Locals from '../library/Localization';
 import Footer from './Footer';
 import { Lateral, RedLineLeft, Localize as L } from './Util';
+
+//Questo è il contenuto della pagina Market
 
 interface RouterProps {
     set: Function;

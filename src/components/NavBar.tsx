@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { ChooseLanguage, GetLanguage } from '../pages/Util'
 import HouseBlank from '../svg/HouseBlank';
 
+//Questa è la barra di navigazione che viene mostrata su desktop
 
 interface NavProps {}
 

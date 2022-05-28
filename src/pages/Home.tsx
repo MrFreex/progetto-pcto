@@ -1,9 +1,14 @@
-import GStyle from './css/Root.module.css';
+/* Queste due istruzioni qui sotto importano dei css detti Scoped, ovvero applicati solo quando referenziati da un elemento */
+import GStyle from './css/Root.module.css';  
 import Style from './css/Home.module.css';
+// Il modulo importato qui sotto facilita in modo Object Oriented la localizzazione del testo
 import Locals from '../library/Localization';
-import { Lateral, RedLineLeft, RedLineRight, Localize as L } from './Util';
-import { useState } from 'react';
+import { Lateral, RedLineLeft, RedLineRight, Localize as L } from './Util'; // Importazione libreria di util ( contiene i componenti utilizzati più spesso )
 import Footer from './Footer';
+
+
+//Questo è il contenuto della pagina Home
+
 
 interface RouterProps {
     set: Function;
@@ -11,7 +16,7 @@ interface RouterProps {
 }
 
 const HomeContent = () => {
-    // const [show, setShow] = useState(false);
+
     return (
         <>
             <div>
@@ -32,17 +37,17 @@ const HomeContent = () => {
 
             <RedLineLeft>
                 <p className={GStyle.text}>
-                    <L string={Locals.home.home_p_1} />
+                    <L string={Locals.home.home_p_1} /> { /* L è il componente che permette di tradurre una stringa in base alla lingua, è definito nel modulo Util come Localize */ }
                 </p>
             </RedLineLeft>
 
             
-                <p className={GStyle.text}>
-                    <L string={Locals.home.home_intro} /> {/*obbiettivi e spiegazione*/}
+                <p className={GStyle.text} style={{ marginLeft: "0.5vw" }}>
+                    <L string={Locals.home.home_intro} />
                 </p>
             
                 <div className={GStyle.text}>
-                    <L string={Locals.home.home_intro_c} /> {/*contenuto pagine*/}
+                    <L string={Locals.home.home_intro_c} />
                 </div>
             
         </>

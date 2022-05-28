@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './App'; // Richiama App.tsx, dove è contenuta l'app ( continua qui )
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-root.render(
+root.render( // Lo scopo di questo metodo è semplicemente l'interpretazione di JSX ( javascript con elementi html integrati ) in puro html
     <React.StrictMode>
         <App />
     </React.StrictMode>

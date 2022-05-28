@@ -1,6 +1,7 @@
 import { Children, useState, useRef, useEffect, cloneElement, SetStateAction } from 'react';
 import { Animate } from '../components/AnimatedSlider';
 
+//Questo è il componente che ci permette di navigare tra le pagine, senza dover riavviare il sito 
 
 import LinkStyle from '../css/Link.module.css';
 

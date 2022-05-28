@@ -1,5 +1,7 @@
+/* Queste due istruzioni qui sotto importano dei css detti Scoped, ovvero applicati solo quando referenziati da un elemento */
 import GStyle from './css/Root.module.css';
 import Style from './css/Util.module.css';
+
 import HStyle from './css/Home.module.css'
 import bLanguage from 'detect-browser-language'
 import styled from 'styled-components';
@@ -13,6 +15,7 @@ interface ILateral {
     children: any;
 }
 
+/* Componente usato per i titoli con effetto tag html, l'effetto con il nome dell'elemento è voluto */
 const Lateral = (props: ILateral) => {
     return (
         <div className={GStyle.graydiv}>
@@ -23,6 +26,7 @@ const Lateral = (props: ILateral) => {
     );
 };
 
+/* Componente che crea una linea rossa a sinistra dell'elemento specificato */
 const RedLineLeft = (props: { children: any }) => {
     return (
         <div className={Style.RedLineLeft}>
@@ -32,6 +36,7 @@ const RedLineLeft = (props: { children: any }) => {
     );
 };
 
+/* Componente che crea una linea rossa a destra dell'elemento specificato */
 const RedLineRight = (props: { children: any }) => {
     return (
         <div className={Style.RedLineRight}>
@@ -43,6 +48,7 @@ const RedLineRight = (props: { children: any }) => {
 
 const changeLang : React.Dispatch<React.SetStateAction<any>>[] = [];
 
+/* Funzione che imposta la lingua del sito a quella specificata (it-IT o en-US) */
 const ChooseLanguage = (lang: string) => {
     cookies.set("lang", lang, { path: '/' })
     for (const v of changeLang) {
@@ -56,6 +62,7 @@ const GetLanguage = () => {
     return activeLang;
 }
 
+/* Funzione che data una stringa simbolica la traduce in base al linguaggio, la specifica delle traduzioni si trova dentro a library/Localization.tsx */
 const Localize = (lstring: { string: any }) => {
     let def = "en-US"
 
@@ -63,8 +70,17 @@ const Localize = (lstring: { string: any }) => {
         def = "it-IT"
     }
 
-    const [lang, setLang] = useState(cookies.get("lang") ?? def)
+    /*
+        In react, lo state, serve per aggiornare la pagina al Set monitorato di una variabile,
+        in questo caso lang è la lingua e setLang è la funzione per impostarla ed aggiornare il componente di conseguenza.
+    */
 
+    const [lang, setLang] = useState(cookies.get("lang") ?? def) 
+
+    /* 
+        L'useEffect viene invece chiamato a ogni aggiornamento del DOM html di React, salvo quando specificato altrimenti
+        con un parametro array aggiuntivo che specifica le dependency dell'aggiornamento, se vuoto viene chiamato solo alla prima renderizzazione del componente.
+    */
     useEffect(() => {
         activeLang = lang;
     });

@@ -1,8 +1,12 @@
+/* Queste due istruzioni qui sotto importano dei css detti Scoped, ovvero applicati solo quando referenziati da un elemento */
 import GStyle from './css/Root.module.css';
 import Style from './css/Web.module.css';
+
 import Locals from '../library/Localization';
 import Footer from './Footer';
 import { Lateral, RedLineLeft, RedLineRight, Localize as L } from './Util';
+
+//Questo è il contenuto della pagina Web
 
 interface RouterProps {
     set: Function;

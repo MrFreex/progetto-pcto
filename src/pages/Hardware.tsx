@@ -1,5 +1,7 @@
-import GStyle from './css/Root.module.css';
+/* Queste due istruzioni qui sotto importano dei css detti Scoped, ovvero applicati solo quando referenziati da un elemento */
+import GStyle from './css/Root.module.css'; 
 import Style from './css/Hardware.module.css';
+
 import Locals from '../library/Localization';
 import { Lateral, RedLineLeft, Localize as L } from './Util';
 import Components from '../images/computerHardwareComponents.gif';
@@ -12,6 +14,7 @@ import NetworkCard from '../images/networkCard.gif';
 import SoundCard from '../images/soundCard.gif';
 import Footer from './Footer';
 
+//Questo è il contenuto della pagina Hardware
 
 interface RouterProps {
     set: Function;

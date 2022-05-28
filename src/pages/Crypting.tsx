@@ -1,9 +1,13 @@
-import GStyle from './css/Root.module.css';
+/* Queste due istruzioni qui sotto importano dei css detti Scoped, ovvero applicati solo quando referenziati da un elemento */
+import GStyle from './css/Root.module.css'; 
 import Style from './css/Crypting.module.css';
+
 import Locals from '../library/Localization';
 import CryptoCompo from './crypting/CryptoCompo';
 import Footer from './Footer';
 import { Lateral, RedLineLeft, RedLineRight, Localize as L, Title } from './Util';
+
+//Questo è il contenuto della pagina Crypting
 
 interface RouterProps {
     set: Function;
@@ -24,8 +28,8 @@ const CryptingContent = () => {
             </div>
             <div></div>
             <RedLineRight>
-                <p className={Style.normalText}>
-                <L string={ Locals.crypting.crypting_p_2}></L> 
+                <p className={GStyle.text}>
+                    <L string={ Locals.crypting.crypting_p_2}></L> 
                 </p>
             </RedLineRight>
             <div></div>
@@ -37,7 +41,7 @@ const CryptingContent = () => {
             </RedLineLeft>
 
             <RedLineRight>
-            <p className={Style.normalText}>
+            <p className={GStyle.text}>
                 <L string={ Locals.crypting.crypting_p_4}></L> 
                 </p>
             </RedLineRight>
