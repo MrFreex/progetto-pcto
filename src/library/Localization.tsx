@@ -91,14 +91,14 @@ const Locals = {
                 ]
 
                 return <>
-                <ul>
-                    { List.map((item, index) => {
-                        return <>
-                            <SummaryIcon key={index} index={index} icon={item.icon}>{item.text}</SummaryIcon>
-                            { item.giveMargin ? <div style={{ marginBottom : (typeof item.giveMargin == "boolean") ? "0.4vh" : item.giveMargin }}></div> : <></> }
-                        </> 
-                    })}
-                </ul>
+                    <ul>
+                        { List.map((item, index) => {
+                            return <>
+                                <SummaryIcon key={index} index={index} icon={item.icon}>{item.text}</SummaryIcon>
+                                { item.giveMargin ? <div style={{ marginBottom : (typeof item.giveMargin == "boolean") ? "0.4vh" : item.giveMargin }}></div> : <></> }
+                            </> 
+                        })}
+                    </ul>
             </> }
         }
     },

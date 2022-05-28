@@ -18,10 +18,11 @@ const Router = (props: myProps) => {
     useEffect(() => {
         (rRef.current as any).scrollTo(0, 0);
     }, [index])
-
-    const childrenWithExtraProp = Children.map(props.children, (child) => {
+    
+    const childrenWithExtraProp = Children.map(props.children, (child, index) => {
         return cloneElement(child, {
             set: setActive,
+            key : index
         });
     });
 
