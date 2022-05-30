@@ -21,7 +21,7 @@ interface RouterProps {
     children: any;
 }
 
-  
+
 const HardwareContent = () => {
     return (
         <>
